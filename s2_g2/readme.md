@@ -1,4 +1,4 @@
-Rama del grupo Home ꉂ(˵˃ ᗜ ˂˵) ⋆˚꩜.ᐟ
+Rama del grupo Home ꉂ(˵˃ ᗜ ˂˵) ⋆˚꩜.ᐟ = s2_g2
 integrantes:
 -Paola Polanco = profile 3
 -Cristobal Millache  = profile
