@@ -1,9 +1,10 @@
 Rama del grupo Home ꉂ(˵˃ ᗜ ˂˵) ⋆˚꩜.ᐟ
 integrantes:
--Cristobal Millache 
--Belén Pareja 
--Belén Arias
--Antonia Lee
--Matilde Rojas
--Irati Azkarate
--Paola Polanco
+-Paola Polanco = profile 3
+-Cristobal Millache  = profile
+-Belén Pareja  = profile
+-Belén Arias = profile 2
+-Antonia Lee = profile
+-Matilde Rojas = profile
+-Irati Azkarate = profile
+
