@@ -4,7 +4,7 @@ integrantes:
 -Cristobal Millache  = profile
 -Belén Pareja  = profile
 -Belén Arias = profile 2
--Antonia Lee = profile
+-Antonia Lee = profile 6
 -Matilde Rojas = profile
 -Irati Azkarate = profile
 
