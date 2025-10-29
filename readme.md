@@ -1,3 +1,6 @@
+Home ꉂ(˵˃ ᗜ ˂˵) ⋆˚꩜.ᐟ = s2_g2 link trello: https://trello.com/b/U1wDpA3Y/home-ꉂ˵˃-ᗜ-˂˵-⋆˚꩜ᐟ
+
+-Cristobal Millache = profile 1 -Belén Arias = profile 2 -Paola Polanco = profile 3 -Belén Pareja = profile 4 -Irati Azkarate = profile 5 -Antonia Lee = profile 6 -Matilde Rojas = profile7
 Equipo Dinamita = s1_g2
 Link Trello: https://trello.com/b/z05U6Mxt/equipo-dinamita
 profile1 = Pedro Martens
