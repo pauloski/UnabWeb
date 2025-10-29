@@ -1,7 +1,7 @@
 Rama del grupo Home ꉂ(˵˃ ᗜ ˂˵) ⋆˚꩜.ᐟ = s2_g2
 integrantes:
 -Paola Polanco = profile 3
--Cristobal Millache  = profile
+-Cristobal Millache  = profile 1
 -Belén Pareja  = profile 4
 -Belén Arias = profile 2
 -Antonia Lee = profile 6
