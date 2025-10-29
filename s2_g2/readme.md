@@ -1,4 +1,5 @@
-Rama del grupo Home ꉂ(˵˃ ᗜ ˂˵) ⋆˚꩜.ᐟ = s2_g2
+Home ꉂ(˵˃ ᗜ ˂˵) ⋆˚꩜.ᐟ = s2_g2
+link trello:
 integrantes:
 -Paola Polanco = profile 3
 -Cristobal Millache  = profile 1
@@ -6,5 +7,5 @@ integrantes:
 -Belén Arias = profile 2
 -Antonia Lee = profile 6
 -Matilde Rojas = profile
--Irati Azkarate = profile
+-Irati Azkarate = profile 5
 
