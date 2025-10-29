@@ -1,3 +1,39 @@
+Home ꉂ(˵˃ ᗜ ˂˵) ⋆˚꩜.ᐟ = s2_g2 link trello: https://trello.com/b/U1wDpA3Y/home-ꉂ˵˃-ᗜ-˂˵-⋆˚꩜ᐟ
+
+-Cristobal Millache = profile 1 -Belén Arias = profile 2 -Paola Polanco = profile 3 -Belén Pareja = profile 4 -Irati Azkarate = profile 5 -Antonia Lee = profile 6 -Matilde Rojas = profile7
+Equipo Dinamita = s1_g2
+Link Trello: https://trello.com/b/z05U6Mxt/equipo-dinamita
+profile1 = Pedro Martens
+profile2 = Javiera Nuñez
+profile3 = Annyelit Calderón
+profile4 = Antonia Zúñiga
+profile5 = Kimmberlly Coronado
+profile6 = Almendra Plaza
+
+
+
+s2_g1 =  Cinnamonroll.
+trello: https://trello.com/b/nJ9qQgW5/home-cinnamoroll 
+profile 1: Paula Prieto, 
+profile 2: Susana Alvear, 
+profile 3: Valentina Torres,
+profile 4: Sofia Santibañez, 
+profile 5: 
+
+
+
+
+
+
+Los Nugu = s1_g1
+Link Trello:
+
+porfile1 = Marco Torres;
+profile2 = Constanza Barrales;
+profile3 = 
+profile4 =
+
+
 # Proyecto Colaborativo de Diseño Web - Primer Año
 
 Bienvenidos al repositorio del proyecto de **Diseño Web**, donde cada grupo trabajará de manera autónoma desarrollando páginas web con **HTML, CSS y JavaScript**, integrando sus trabajos con **GitHub** y desplegando producción en **Cloudflare**.
