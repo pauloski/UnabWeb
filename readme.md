@@ -1,6 +1,9 @@
 Los Nugu = s1_g1
-porfile1 = Marco Torres
-profile2 = Constanza Barrales
+Link Trello:
+
+porfile1 = Marco Torres;
+profile2 = Constanza Barrales;
 profile3 = 
 profile4 =
+
 
