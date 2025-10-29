@@ -4,7 +4,7 @@ profile 1: Paula Prieto,
 profile 2: Susana Alvear, 
 profile 3: Valentina Torres,
 profile 4: Sofia Santibañez, 
-profile 5: 
+profile 5: Tomas Vio
 
 
 
@@ -79,3 +79,4 @@ s1_g4
 s2_g1
 s2_g2
 s2_g3
+
