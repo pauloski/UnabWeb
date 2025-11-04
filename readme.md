@@ -19,6 +19,7 @@ profile 2: Susana Alvear,
 profile 3: Valentina Torres,
 profile 4: Sofia Santibañez, 
 profile 5: Tomas Vio
+profile 6: Fernanda Mura,
 
 
 
@@ -93,4 +94,5 @@ s1_g4
 s2_g1
 s2_g2
 s2_g3
+
 
