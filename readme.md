@@ -79,8 +79,8 @@ Link Trello:
 
 porfile1 = Marco Torres;  
 profile2 = Constanza Barrales;  
-profile3 =   
-profile4 =. 
+profile3 = Valetina Muñoz
+profile4 =. Darin Pinol
    
 Equipo Dinamita = s1_g2. 
 Link Trello: https://trello.com/b/z05U6Mxt/equipo-dinamita. 
@@ -118,5 +118,6 @@ s1_g4
 s2_g1
 s2_g2
 s2_g3
+
 
 
