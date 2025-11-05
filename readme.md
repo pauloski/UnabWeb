@@ -90,13 +90,26 @@ Para gestionar la colaboración y producción, utilizamos:
 
 ## Equipos
 
+
+
+- Masturblero = s1_g4 
+- Link trello = https://trello.com/b/dcwHHCtn/masturblero-%E0%AD%AD-%CB%9A-%E1%B5%8E%E1%B5%8E
+- porfile1 = Florencia Rebolledo 
+- profile2 = Valentina Farías 
+- profile3 = Victoria Pérez 
+- profile4 = Martina Flores 
+- profile5 = Antonia López
+
+
+
+
 - Los Nugu = s1_g1
 - Link Trello:  
 
 - porfile1 = Marco Torres;  
 - profile2 = Constanza Barrales;  
-- porfile3 = ;  
-- porfile4 = ;
+- profile3 = Valentina Muñoz;
+- profile4 = Darin Pinol
    
 - Equipo Dinamita = s1_g2. 
 - Link Trello: https://trello.com/b/z05U6Mxt/equipo-dinamita. 
@@ -126,4 +139,13 @@ Para gestionar la colaboración y producción, utilizamos:
 - Irati Azkarate = profile 5. 
  - Antonia Lee = profile 6.  
  - Matilde Rojas = profile7. 
+
+s1_g1
+s1_g2
+s1_g3
+s1_g4
+s2_g1
+s2_g2
+s2_g3
+
 
