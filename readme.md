@@ -4,7 +4,7 @@ Link Trello:
 porfile1 = Marco Torres;
 profile2 = Constanza Barrales;
 profile3 = Valentina Muñoz;
-profile4 =
+profile4 = Darin Pinol
 
 
 # Proyecto Colaborativo de Diseño Web - Primer Año
@@ -66,4 +66,5 @@ s1_g4
 s2_g1
 s2_g2
 s2_g3
+
 
