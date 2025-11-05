@@ -1,10 +1,10 @@
 Los Nugu = s1_g1
-Link Trello:
+Link Trello: https://trello.com/b/vfx3cjDZ/los-nugu
 
 porfile1 = Marco Torres;
 profile2 = Constanza Barrales;
 profile3 = Valentina Muñoz;
-profile4 = Darin Pinol
+profile4 = Darin Pinol;
 
 
 # Proyecto Colaborativo de Diseño Web - Primer Año
@@ -118,6 +118,7 @@ s1_g4
 s2_g1
 s2_g2
 s2_g3
+
 
 
 
