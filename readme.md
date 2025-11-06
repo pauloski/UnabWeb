@@ -92,18 +92,56 @@ Cada grupo trabajará en su propia rama, la cual debe tener el mismo nombre que 
 
 ---
 
-## 🚀 Cómo Contribuir
+## 🚀 Cómo Contribuir: Flujo de Trabajo Simple
 
-Sigue estos pasos si eres parte de un grupo y deseas integrar tu trabajo al repositorio principal:
+Dado que estamos enfocados en el diseño y el despliegue rápido, utilizaremos la interfaz web de GitHub para subir y editar archivos, sin necesidad de usar la consola.
 
-1.  **Clona** este repositorio.
-2.  **Crea tu rama de grupo** (`git checkout -b sX_gY`).
-3.  **Realiza tus cambios** dentro de tu carpeta asignada (`sX_gY/`).
-4.  **Haz Commit** de tus cambios.
-5.  **Crea un Pull Request (PR)**: Dirige tu PR desde tu rama de grupo (`sX_gY`) hacia la rama **`dev`** para su revisión e integración.
-6.  *Una vez aprobado el PR a `dev`*, el trabajo se integrará en la rama `main` (producción) en el momento oportuno.
+### 1. Seleccionar tu Rama de Trabajo
 
----
+**Es vital que SIEMPRE trabajes en la rama de tu grupo (`sX_gY`).**
+
+1.  Ve a la página principal de este repositorio en GitHub.
+2.  Busca el desplegable de ramas (generalmente dice `main` o `dev`).
+3.  **Selecciona la rama que corresponde a tu grupo** (ej: `s1_g1`).
+
+### 2. Subir o Editar Archivos
+
+Todo el trabajo de tu grupo debe ir dentro de la carpeta asignada (ej: `s1_g1/`).
+
+#### A. Para Subir Archivos Nuevos (o Carpetas Enteras)
+
+1.  En la página de tu rama de grupo (`sX_gY`), navega hasta tu carpeta (ej: `s1_g1/`).
+2.  Haz clic en el botón **`Add file`** y selecciona **`Upload files`**.
+3.  Arrastra y suelta (o selecciona) todos los archivos y carpetas que quieras subir (HTML, CSS, imágenes).
+4.  En el campo "Commit changes", escribe un **mensaje descriptivo** (ej: "Agrega estructura inicial de home y profile1").
+5.  Asegúrate de que la opción "Commit directly to the `sX_gY` branch" esté seleccionada.
+6.  Haz clic en el botón **`Commit changes`**.
+
+#### B. Para Editar Archivos Existentes
+
+1.  Navega hasta el archivo que deseas editar (ej: `s1_g1/css/home.css`).
+2.  Haz clic en el icono del **lápiz** (Editar este archivo) en la parte superior derecha.
+3.  Realiza tus cambios.
+4.  En el campo "Commit changes", escribe un **mensaje descriptivo** (ej: "Actualiza colores de fondo en home.css").
+5.  Asegúrate de que la opción "Commit directly to the `sX_gY` branch" esté seleccionada.
+6.  Haz clic en el botón **`Commit changes`**.
+
+### 3. Integrar tu Trabajo a DEV: Crear un Pull Request (PR)
+
+Una vez que tu grupo haya terminado una etapa de trabajo y desees que sea revisada y unida con otros grupos:
+
+1.  Ve a la pestaña **`Pull requests`**.
+2.  Haz clic en el botón **`New pull request`**.
+3.  En la configuración de ramas:
+    * **Base:** Selecciona la rama **`dev`** (es la rama de integración).
+    * **Compare:** Selecciona la rama de **tu grupo** (ej: `s1_g1`).
+4.  Agrega un **título claro** al PR (ej: "Integración - Versión inicial de Home y Perfiles").
+5.  Agrega una **descripción** de los cambios.
+6.  Haz clic en **`Create pull request`**.
+
+> **⚠️ ¡Advertencia!** Nunca intentes hacer un Pull Request desde la rama de tu grupo a la rama `main`. Tu docente se encargará de integrar los cambios de `dev` a `main` cuando sea oportuno.
+
+
 
 ## 🤝 Equipos y Enlaces de Interés
 
