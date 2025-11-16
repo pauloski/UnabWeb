@@ -1,23 +1,23 @@
 :root {
-    --color-bg: #8428d4;
+    --color-bg: #ff8686;
     --font: Arial, sans-serif;
-    --color-text-strong: #000;
+    --color-text-strong: #4e0303;
     --color-text-weak: #6c757d;
 }
 
 body{
-    background-color: rgb(208, 110, 225);
+    background-color: rgb(245, 110, 110);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .container{
     width: 70%;
     height: auto;
-    background-color: #e094ef;
+    background-color: #a33535;
     margin: 60px auto;
     padding: 16px;
     border-radius: 10px;
-    border: 1px solid #0000001a;
+    border: 1px solid #5506061a;
 
 }
 
@@ -30,7 +30,7 @@ body{
 }
 
 .back-link{
-    color: #e094ef;
+    color: #f1433a;
     font-family: fantasy;
     font-size: 16px;
     font-style: normal;
@@ -87,4 +87,5 @@ body{
 .role-box{
     border-radius: 10px;
     padding: 24px;
-    background-color: #c667e0;
+    background-color: #ea8282;
+}
