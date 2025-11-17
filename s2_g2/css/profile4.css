@@ -1,0 +1,91 @@
+:root {
+    --color-bg: #ff8686;
+    --font: Arial, sans-serif;
+    --color-text-strong: #4e0303;
+    --color-text-weak: #6c757d;
+}
+
+body{
+    background-color: rgb(245, 110, 110);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 70%;
+    height: auto;
+    background-color: #a33535;
+    margin: 60px auto;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid #5506061a;
+
+}
+
+@media (max-width:480px){
+    .container{
+    margin: 0;
+    width: 100%;
+    }
+    
+}
+
+.back-link{
+    color: #f1433a;
+    font-family: fantasy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 32px;
+    display: inline-flex;
+
+}
+
+.profile-card{
+    padding: 16px;
+    border-bottom: 1px solid #0000001a;
+
+}
+
+.profile-photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 16px;
+    
+}
+
+.profile-info{
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.profile-info h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.section{
+    padding: 16px;
+}
+
+.section h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section p{
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.role-box{
+    border-radius: 10px;
+    padding: 24px;
+    background-color: #ea8282;
+}
