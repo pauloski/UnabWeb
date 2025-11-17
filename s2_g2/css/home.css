@@ -1,0 +1,132 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(to bottom, #fff, #d4aaff, #6f82ff);
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+    padding: 2rem;
+    min-height: 100dvh;
+}
+
+.team-section-wrapper {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.back-link {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.section-header h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.section-header .tag {
+    font-size: 0.8rem;
+    font-weight: 500;
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 0.25rem;
+    margin-bottom: 2rem;
+}
+
+.team-content h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #222;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+}
+
+.team-card {
+    background-color: #fff;
+    border: 1px solid #eef;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-card img {
+    width: 100%;
+    height: 35dvh;
+    display: block;
+    aspect-ratio: auto;
+    object-fit: cover;
+    mask-image: radial-gradient(ellipse 85% 90% at center, black 0%, transparent 100%);
+    animation: pulse-fade-in 0.6s ease-in-out;
+}
+
+
+.card-info {
+    padding: 0.6rem;
+}
+
+.card-info h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem 0;
+}
+
+.card-info p {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0;
+}
+
+@media (max-width: 1200px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    body {
+        padding: 1rem;
+    }
+
+    .team-section-wrapper {
+        padding: 1.5rem;
+    }
+}
+
+ @media (max-width: 480px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
