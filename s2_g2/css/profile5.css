@@ -1,0 +1,75 @@
+/* profile_S2G2.css — Perfil Irati Azkarate Durana */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+.back-link:hover {
+  color: #0b54b6;
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.profile-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 3px solid #e5e5e5;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h1 {
+  margin: 0 0 10px;
+  font-size: 1.8rem;
+  color: #111;
+}
+
+.profile-info .role {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.profile-info .bio {
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.profile-info .contact a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+.profile-info .contact a:hover {
+  text-decoration: underline;
+}
+
