@@ -231,14 +231,3 @@ A continuación se detallan los grupos activos con sus enlaces de gestión (Trel
     * Catalina Fuentes – [Profile 5](https://unabweb.pages.dev/s2_g3/profile5)
     * Gaspar Miño – [Profile 6](https://unabweb.pages.dev/s2_g3/profile6)
     * Benjamín Maturana – [Profile 7](https://unabweb.pages.dev/s2_g3/profile7)
-
-
-
-
-
-
-
-
-
-
-
