@@ -1,75 +1,94 @@
-/* profile_S2G2.css — Perfil Irati Azkarate Durana */
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 30px 20px;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+/* --- Paleta y tipografía --- */
+:root{
+    --bg:#f4f4f4;
+    --white:#ffffff;
+    --text:#222;
+    --text-soft:#6b6b6b;
+    --border:#dcdcdc;
+    --accent:#4a76a8;
+    --font:'Inter', sans-serif;
 }
 
-.back-link {
-  display: inline-block;
-  margin-bottom: 15px;
-  text-decoration: none;
-  color: #1a73e8;
-  font-weight: bold;
-  transition: color 0.2s ease;
-}
-.back-link:hover {
-  color: #0b54b6;
+/* --- Fondo general --- */
+body{
+    background: var(--bg);
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
 }
 
-.profile {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 30px;
+/* --- Contenedor principal --- */
+.profile-container{
+    max-width: 750px;
+    margin: 60px auto;
+    background: var(--white);
+    padding: 40px 48px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
 }
 
-.profile-img {
-  width: 220px;
-  height: 220px;
-  border-radius: 12px;
-  object-fit: cover;
-  border: 3px solid #e5e5e5;
+/* --- Foto centrada --- */
+.profile-photo-box{
+    text-align: center;
+    margin-bottom: 24px;
 }
 
-.profile-info {
-  flex: 1;
+.profile-photo{
+    width: 180px;
+    height: 180px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid var(--border);
 }
 
-.profile-info h1 {
-  margin: 0 0 10px;
-  font-size: 1.8rem;
-  color: #111;
+/* --- Nombre y especialidad --- */
+.profile-name{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
 }
 
-.profile-info .role {
-  font-weight: bold;
-  color: #555;
-  margin-bottom: 10px;
+.profile-specialty{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--accent);
+    margin-top: 6px;
 }
 
-.profile-info .bio {
-  line-height: 1.5;
-  margin-bottom: 12px;
+/* --- Secciones --- */
+.profile-section,
+.role-box{
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 20px 24px;
+    border-radius: 10px;
+    margin-top: 32px;
 }
 
-.profile-info .contact a {
-  color: #1a73e8;
-  text-decoration: none;
+.profile-section h3,
+.role-box h3{
+    margin-top: 0;
+    font-size: 20px;
+    color: var(--text);
 }
-.profile-info .contact a:hover {
-  text-decoration: underline;
+
+.profile-section p,
+.role-box p{
+    margin: 0;
+    color: var(--text-soft);
+    line-height: 1.5;
+}
+
+/* --- Responsive --- */
+@media(max-width: 500px){
+    .profile-container{
+        padding: 24px;
+        margin: 20px;
+    }
 }
 
