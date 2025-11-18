@@ -84,7 +84,7 @@ Cada grupo trabajará en su propia rama, la cual debe tener el mismo nombre que 
 | :--- | :--- | :--- |
 | `s1_g1` | **Equipo Los Nugu 🐙** | [unabweb.pages.dev/s1_g1/home](https://unabweb.pages.dev/s1_g1/home) |
 | `s1_g2` | **Equipo Dinamita 💥** | [unabweb.pages.dev/s1_g2/home](https://unabweb.pages.dev/s1_g2/home) |
-| `s1_g3` | **(pendiente de asignación)** | |
+| `s1_g3` | **₍^. .^₎Ⳋ** | [unabweb.pages.dev/s1_g3/home](https://unabweb.pages.dev/s1_g3/home)  |
 | `s1_g4` | **Equipo Masturblero 🎲** | [unabweb.pages.dev/s1_g4/home](https://unabweb.pages.dev/s1_g4/home) |
 | `s2_g1` | **Equipo Cinnamonroll 🍥** | [unabweb.pages.dev/s2_g1/home](https://unabweb.pages.dev/s2_g1/home) |
 | `s2_g2` | **Equipo Home 🌸** | [unabweb.pages.dev/s2_g2/home](https://unabweb.pages.dev/s2_g2/home) |
@@ -150,7 +150,7 @@ A continuación se detallan los grupos activos con sus enlaces de gestión (Trel
 ### 🐙 Los Nugu — `s1_g1`
 
 * **Home:** [https://unabweb.pages.dev/s1_g1/home](https://unabweb.pages.dev/s1_g1/home)
-* **Trello:** (pendiente)
+* **Trello:** [https://trello.com/b/vfx3cjDZ/los-nugu](https://trello.com/b/vfx3cjDZ/los-nugu)
 * **Integrantes:**
     * Marco Torres – [Profile 1](https://unabweb.pages.dev/s1_g1/profile1)
     * Constanza Barrales – [Profile 2](https://unabweb.pages.dev/s1_g1/profile2)
@@ -168,6 +168,21 @@ A continuación se detallan los grupos activos con sus enlaces de gestión (Trel
     * Antonia Zúñiga – [Profile 4](https://unabweb.pages.dev/s1_g2/profile4)
     * Kimmberlly Coronado – [Profile 5](https://unabweb.pages.dev/s1_g2/profile5)
     * Almendra Plaza – [Profile 6](https://unabweb.pages.dev/s1_g2/profile6)
+
+
+### ₍^. .^₎Ⳋ — `s1_g3`
+
+* **Home:** [https://unabweb.pages.dev/s1_g2/home](https://unabweb.pages.dev/s1_g2/home)
+* **Trello:** [https://trello.com/b/OzAcFQG5/%E2%82%8D-%E2%82%8E%E2%B3%8B] (https://trello.com/b/OzAcFQG5/%E2%82%8D-%E2%82%8E%E2%B3%8B)
+* **Integrantes:**
+    * nombre – [Profile 1](https://unabweb.pages.dev/s1_g3/profile1)
+    * nombre – [Profile 2](https://unabweb.pages.dev/s1_g3/profile2)
+    * nombre – [Profile 3](https://unabweb.pages.dev/s1_g3/profile3)
+    * nombre – [Profile 4](https://unabweb.pages.dev/s1_g3/profile4)
+    * nombre – [Profile 5](https://unabweb.pages.dev/s1_g3/profile5)
+    * nombre – [Profile 6](https://unabweb.pages.dev/s1_g3/profile6)
+
+
 
 ### 🎲 Masturblero — `s1_g4`
 
