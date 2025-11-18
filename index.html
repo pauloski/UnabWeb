@@ -1,3 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Proyectos Web — 1er Año Diseño UNAB</title>
+
+<style>
+  :root {
+    --color-text: #111;
+    --color-muted: #666;
+    --color-border: #e5e5e5;
+    --radius: 10px;
+  }
+
+  body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: var(--color-text);
+    background: #fff;
+    padding: 1rem;
+  }
+
+  h1, h2, h3, h4 {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  /* ---------- HEADER ----------- */
+  header {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: 2rem;
+  }
+
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  /* ---------- HERO ----------- */
+  .hero {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem 0 3rem;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+    margin-bottom: .7rem;
+  }
+
+  .hero p {
+    color: var(--color-muted);
+    font-size: .95rem;
+    line-height: 1.4;
+  }
+
+  /* ---------- SECTIONS ----------- */
+  .section {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+
+  .section-title {
+    margin-bottom: .3rem;
+    font-size: 1.3rem;
+  }
+
+  .section-sub {
+    margin-bottom: 1.5rem;
+    color: var(--color-muted);
+    font-size: .95rem;
+  }
+
+  /* ---------- GRID DE TARJETAS ----------- */
+  .cards {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .cards {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  /* ---------- CARD ----------- */
+  .card {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: #fff;
+  }
+
+  .card img {
+    width: 100%;
+    display: block;
+  }
+
+  .card-content {
+    padding: 1rem;
+  }
+
+  .card h4 {
+    font-size: 1rem;
+    margin-bottom: .3rem;
+  }
+
+  .card p {
+    color: var(--color-muted);
+    font-size: .9rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    display: inline-block;
+    background: #000;
+    color: white;
+    padding: .7rem 1rem;
+    text-decoration: none;
+    font-size: .9rem;
+    border-radius: 4px;
+  }
+
+  /* --- GRID DE 3 CARDS PARA LA SECCIÓN S2 --- */
+  .cards-3 {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .cards-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>
+
+</head>
+<body>
+
+<header>
+  <h1>Proyectos Web — 1er Año Diseño UNAB</h1>
 <h1>Hola mundo</h1>
 <h2>Hola UNAB</h2>
 <a href="s1_g1/home.html">Ir al Home del Grupo s1_g1</a><br>
@@ -7,3 +155,100 @@
 <a href="s2_g1/home.html">Ir al Home del Grupo s2_g1</a><br>
 <a href="s2_g2/home.html">Ir al Home del Grupo s2_g2</a><br>
 <a href="s2_g3/home.html">Ir al Home del Grupo s2_g3</a>
+
+
+</header>
+
+<section class="hero">
+  <h2>Proyectos Colaborativos</h2>
+  <p>Portal de equipos de trabajo del curso de Diseño Web. Cada grupo presenta su proyecto final desarrollado con HTML, CSS y JavaScript.</p>
+</section>
+
+<!-- SECCIÓN S1 -->
+<section class="section">
+  <h3 class="section-title">Sección S1</h3>
+  <p class="section-sub">Grupos 1 al 4</p>
+
+  <div class="cards">
+    <!-- CARD 1 -->
+    <div class="card">
+      <img src="https://placehold.co/800x500" alt="">
+      <div class="card-content">
+        <h4>Grupo 1</h4>
+        <p>Equipo enfocado en diseño de interfaces modernas</p>
+        <a class="btn" href="s1_g1/home.html">Ver grupo</a>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+      <img src="https://placehold.co/800x500" alt="">
+      <div class="card-content">
+        <h4>Grupo 2</h4>
+        <p>Especialistas en diseño responsivo y</p>
+        <a class="btn" href="s1_g2/home.html">Ver grupo</a>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card">
+      <img src="https://placehold.co/800x500" alt="">
+      <div class="card-content">
+        <h4>Grupo 3</h4>
+        <p>Equipo con enfoque en diseño visual y tipografía</p>
+        <a class="btn" href="s1_g3/home.html">Ver grupo</a>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="card">
+      <img src="https://placehold.co/800x500" alt="">
+      <div class="card-content">
+        <h4>Grupo 4</h4>
+        <p>Especialistas en desarrollo web y estándares</p>
+        <a class="btn" href="s1_g4/home.html">Ver grupo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN S2 -->
+<section class="section">
+  <h3 class="section-title">Sección S2</h3>
+  <p class="section-sub">Grupos 5 al 7</p>
+
+  <div class="cards-3">
+    <!-- CARD 5 -->
+    <div class="card">
+      <img src="https://placehold.co/800x500" alt="">
+      <div class="card-content">
+        <h4>Grupo 5</h4>
+        <p>Equipo creativo enfocado en diseño innovador</p>
+        <a class="btn" href="s2_g1/home.html">Ver grupo</a>
+      </div>
+    </div>
+
+    <!-- CARD 6 -->
+    <div class="card">
+      <img src="https://placehold.co/800x500" alt="">
+      <div class="card-content">
+        <h4>Grupo 6</h4>
+        <p>Especialistas en accesibilidad y usabilidad web</p>
+        <a class="btn" href="s2_g2/home.html">Ver grupo</a>
+      </div>
+    </div>
+
+    <!-- CARD 7 -->
+    <div class="card">
+      <img src="https://placehold.co/800x500" alt="">
+      <div class="card-content">
+        <h4>Grupo 7</h4>
+        <p>Equipo multidisciplinario con visión integral del diseño web</p>
+        <a class="btn" href="s2_g3/home.html">Ver grupo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
