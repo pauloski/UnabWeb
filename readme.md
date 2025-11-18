@@ -173,7 +173,7 @@ A continuación se detallan los grupos activos con sus enlaces de gestión (Trel
 ### ₍^. .^₎Ⳋ — `s1_g3`
 
 * **Home:** [https://unabweb.pages.dev/s1_g2/home](https://unabweb.pages.dev/s1_g2/home)
-* **Trello:** [https://trello.com/b/OzAcFQG5/%E2%82%8D-%E2%82%8E%E2%B3%8B] (https://trello.com/b/OzAcFQG5/%E2%82%8D-%E2%82%8E%E2%B3%8B)
+* **Trello:** [https://trello.com/b/OzAcFQG5/%E2%82%8D-%E2%82%8E%E2%B3%8B](https://trello.com/b/OzAcFQG5/%E2%82%8D-%E2%82%8E%E2%B3%8B)
 * **Integrantes:**
     * nombre – [Profile 1](https://unabweb.pages.dev/s1_g3/profile1)
     * nombre – [Profile 2](https://unabweb.pages.dev/s1_g3/profile2)
