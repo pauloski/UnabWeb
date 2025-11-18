@@ -1,5 +1,5 @@
 
-/* --- Paleta y tipografía --- */
+
 :root{
     --bg:#f4f4f4;
     --white:#ffffff;
@@ -10,7 +10,7 @@
     --font:'Inter', sans-serif;
 }
 
-/* --- Fondo general --- */
+
 body{
     background: var(--bg);
     margin: 0;
@@ -18,7 +18,7 @@ body{
     font-family: var(--font);
 }
 
-/* --- Contenedor principal --- */
+
 .profile-container{
     max-width: 750px;
     margin: 60px auto;
@@ -29,7 +29,7 @@ body{
     box-shadow: 0 4px 16px rgba(0,0,0,0.06);
 }
 
-/* --- Foto centrada --- */
+
 .profile-photo-box{
     text-align: center;
     margin-bottom: 24px;
@@ -43,7 +43,7 @@ body{
     border: 2px solid var(--border);
 }
 
-/* --- Nombre y especialidad --- */
+
 .profile-name{
     text-align: center;
     font-size: 32px;
@@ -60,7 +60,7 @@ body{
     margin-top: 6px;
 }
 
-/* --- Secciones --- */
+
 .profile-section,
 .role-box{
     background: var(--white);
@@ -84,7 +84,7 @@ body{
     line-height: 1.5;
 }
 
-/* --- Responsive --- */
+
 @media(max-width: 500px){
     .profile-container{
         padding: 24px;
