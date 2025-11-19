@@ -1,8 +1,8 @@
 :root {
-    --color-bg: #005e00;
-    --color-text-strong:#7c1b12;
-    --color-text-weak: #c21000;
-    --font:Times, sans-serif;
+    --color-bg: #d8ffba;
+    --color-text-strong: #007111;
+    --color-text-weak: #246601;
+    --font:Times, sans;
 }
 
 body{
@@ -13,9 +13,9 @@ font-family: var(--font);
 .container{
 width:70%;
 height:auto;
-background-color: #065509;
+background-color: #9de06e;
 margin: 60px auto 60px auto;
-border: 1px solid #96d59d;
+border: 1px solid #06580f;
 padding: 16px;
 border-radius: 10px;
 }
