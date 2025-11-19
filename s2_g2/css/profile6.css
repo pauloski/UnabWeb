@@ -7,8 +7,9 @@
 
 }
 body{
-    background-color: #adefff;
+    background-color:#adefff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
     
 
 }
@@ -86,6 +87,6 @@ body{
 
 .role-box{
 border-radius: 10px;
-background: fffcea;
+background: #fffcea;
 padding: 24px;
 }
