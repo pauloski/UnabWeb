@@ -1,52 +1,115 @@
-:root{
-    --color-bg: rgb(240, 240, 240);
-    --font: helvetica, sans-serif;
-    --color-text-strong: #000000; 
-    --color-text-weak: #5f0d41; 
+:root {
+    --color-bg: #f9eaf6;
+    --color-text-strong:#222;
+    --color-text-weak: #a0407b;
+    --font:Arial, sans-serif;
 }
 
 body{
-    background-color: var(--color-bg)
-    font-family: var(var(--color-text-weak))
+background-color: var(--color-bg);
+font-family: var(--font);
 }
-
 
 .container{
-    width: 70%;
-    margin: 600px;
-    background-color: rgb(255, 223, 238);
-    margin: 60px auto 0 auto;
-    padding: 16px;
+width:70%;
+height:auto;
+background-color: #dfd1d9;
+margin: 60px auto 60px auto;
+border: 1px solid #ffffff;
+padding: 16px;
+border-radius: 10px;
 }
 
-@media (max-width:480px){
+@media(max-width: 600px){
     .container{
+        width:100%;
         margin: 0;
-        width: 100;
     }
 }
 
-.back-link{
-    color: rgb(211, 0, 137);
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: -0.312px;
-    margin-bottom: 32px;
-    display: inline-flex;
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--color-text-weak);
+    text-decoration: none;
+}
 
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.profile-card {
+    padding: 32px;
+    border-bottom: 1px solid #ffffff;
 }
 
 .profile-photo{
-    width: 200px;
-    height: 200px;
-    border-radius: top;
-    display:inline-block;
-    vertical-align: top;
-    margin-right: 16px;
+width: 200px;
+height: 200px;
+border-radius: 10px;
+display: inline-block;
+margin-right: 32px
 }
 
 .profile-info{
-    width:200px;
+display: inline-block;
+vertical-align: top;
+width: calc(100% - 264px); /*200px foto + 32px margen */
+}
+
+@media(max-width: 600px){
+   .profile-info{
+    width:100%
+}
+}
+
+.profile-info h2{
+    margin-top:0;
+    color: var(--color-text-strong);
+    font-size: 24px;
+}
+
+.profile-info p{
+    margin-top:0;
+    color: var(--color-text-weak);
+    font-size: 16px;
+    line-height: 145%;
+}
+
+.section{
+    padding: 32px;
+}
+
+.section h3{
+    margin-top:0;
+    color: var(--color-text-strong);
+    font-size: 18px;
+}
+
+.section p{
+    margin-top:0;
+    color: var(--color-text-weak);
+    font-size: 14px;
+    line-height: 145%;
+}
+
+.role-box {
+    width: 100%;
+    background-color:#ECECF0 ;
     height: auto;
-    background-color: aqua;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.role-box h4{
+    margin-top:0;
+    color: var(--color-text-strong);
+    font-size: 16px;
+}
+
+.role-box p{
+    margin-top:0;
+    color: var(--color-text-weak);
+    font-size: 14px;
+    line-height: 145%;
 }
