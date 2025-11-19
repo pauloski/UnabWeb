@@ -1,9 +1,20 @@
+    --color-bg: #d8ffca;
+    --color-text-strong:#000000;
+    --color-text-weak: #78aeff;
+    --font:Arial, sans-serif;
+}
+
+body{
+background-color: var(--color-bg);
+font-family: var(--font);
+}
+
 .container{
 width:70%;
 height:auto;
-background-color: #fff;
+background-color: #a4ed8a;
 margin: 60px auto 60px auto;
-border: 1px solid #ddd;
+border: 1px solid #22cfdf;
 padding: 16px;
 border-radius: 10px;
 }
@@ -28,7 +39,7 @@ border-radius: 10px;
 
 .profile-card {
     padding: 32px;
-    border-bottom: 1px solid #cdf9ff;
+    border-bottom: 1px solid #053e45;
 }
 
 .profile-photo{
@@ -101,3 +112,4 @@ width: calc(100% - 264px); /*200px foto + 32px margen */
     font-size: 14px;
     line-height: 145%;
 }
+
