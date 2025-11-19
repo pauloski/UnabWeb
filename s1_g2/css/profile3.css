@@ -1,7 +1,7 @@
 :root {
-    --color-bg: #f8f8f8;
-    --color-text-strong:#222;
-    --color-text-weak: #636262;
+    --color-bg: #ffffff;
+    --color-text-strong:#394539;
+    --color-text-weak: #85a08f;
     --font:Arial, sans-serif;
 }
 
@@ -13,9 +13,9 @@ font-family: var(--font);
 .container{
 width:70%;
 height:auto;
-background-color: #fff;
+background-color: #e1f6ea;
 margin: 60px auto 60px auto;
-border: 1px solid #ddd;
+border: 1px solid #ffffff;
 padding: 16px;
 border-radius: 10px;
 }
@@ -40,7 +40,7 @@ border-radius: 10px;
 
 .profile-card {
     padding: 32px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ffffff;
 }
 
 .profile-photo{
@@ -95,7 +95,7 @@ width: calc(100% - 264px); /*200px foto + 32px margen */
 
 .role-box {
     width: 100%;
-    background-color:#ECECF0 ;
+    background-color:#ffffff ;
     height: auto;
     padding: 16px;
     border-radius: 10px;
