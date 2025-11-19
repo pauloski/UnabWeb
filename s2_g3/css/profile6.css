@@ -1,7 +1,7 @@
 :root {
-    --color-bg: #d8ffba;
-    --color-text-strong: #007111;
-    --color-text-weak: #246601;
+    --color-bg: #7f4ca5;
+    --color-text-strong:#461e63;
+    --color-text-weak: #8541a5;
     --font:Arial, sans-serif;
 }
 
@@ -20,31 +20,35 @@ padding: 16px;
 border-radius: 10px;
 }
 
-@media(max-width:600px){
+@media(max-width: 600px){
     .container{
-        width: 100%;
+        width:100%;
         margin: 0;
     }
 }
 
-.back-link{
-    display:inline-block;
+.back-link {
+    display: inline-block;
     margin-bottom: 20px;
     color: var(--color-text-weak);
-    text-decoration: none; 
+    text-decoration: none;
 }
 
-.profile card{
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.profile-card {
     padding: 32px;
-    border-bottom: 1px solid #00ddff;
+    border-bottom: 1px solid #ddd;
 }
 
 .profile-photo{
-width:200px;
+width: 200px;
 height: 200px;
 border-radius: 10px;
 display: inline-block;
-margin-right: 32px;
+margin-right: 32px
 }
 
 .profile-info{
@@ -90,8 +94,8 @@ width: calc(100% - 264px); /*200px foto + 32px margen */
 }
 
 .role-box {
-    width: 100%;
-    background-color:#f4e3f3 ;
+    width: 97%;
+    background-color:##e6f4e3 ;
     height: auto;
     padding: 16px;
     border-radius: 10px;
@@ -109,6 +113,3 @@ width: calc(100% - 264px); /*200px foto + 32px margen */
     font-size: 14px;
     line-height: 145%;
 }
-
-
-
