@@ -1,91 +1,115 @@
 :root {
-    --color-bg: #ff8686;
-    --font: Arial, sans-serif;
-    --color-text-strong: #4e0303;
-    --color-text-weak: #6c757d;
+    --color-bg: #f8f8f8;
+    --color-text-strong:#222;
+    --color-text-weak: #636262;
+    --font:Arial, sans-serif;
 }
 
 body{
-    background-color: rgb(245, 110, 110);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+background-color: var(--color-bg);
+font-family: var(--font);
 }
 
 .container{
-    width: 70%;
-    height: auto;
-    background-color: #a33535;
-    margin: 60px auto;
-    padding: 16px;
-    border-radius: 10px;
-    border: 1px solid #5506061a;
-
+width:70%;
+height:auto;
+background-color: #fff;
+margin: 60px auto 60px auto;
+border: 1px solid #ddd;
+padding: 16px;
+border-radius: 10px;
 }
 
-@media (max-width:480px){
+@media(max-width: 600px){
     .container{
-    margin: 0;
-    width: 100%;
+        width:100%;
+        margin: 0;
     }
-    
 }
 
-.back-link{
-    color: #f1433a;
-    font-family: fantasy;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    margin-bottom: 32px;
-    display: inline-flex;
-
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--color-text-weak);
+    text-decoration: none;
 }
 
-.profile-card{
-    padding: 16px;
-    border-bottom: 1px solid #0000001a;
+.back-link:hover {
+    text-decoration: underline;
+}
 
+.profile-card {
+    padding: 32px;
+    border-bottom: 1px solid #ddd;
 }
 
 .profile-photo{
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 16px;
-    
+width: 200px;
+height: 200px;
+border-radius: 10px;
+display: inline-block;
+margin-right: 32px
 }
 
 .profile-info{
-    width: 50%;
-    height: auto;
-    display: inline-block;
-    vertical-align: top;
+display: inline-block;
+vertical-align: top;
+width: calc(100% - 264px); /*200px foto + 32px margen */
+}
+
+@media(max-width: 600px){
+   .profile-info{
+    width:100%
+}
 }
 
 .profile-info h2{
+    margin-top:0;
+    color: var(--color-text-strong);
     font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 8px;
+}
+
+.profile-info p{
+    margin-top:0;
+    color: var(--color-text-weak);
+    font-size: 16px;
+    line-height: 145%;
 }
 
 .section{
-    padding: 16px;
+    padding: 32px;
 }
 
 .section h3{
+    margin-top:0;
+    color: var(--color-text-strong);
     font-size: 18px;
-    font-weight: 600;
 }
 
 .section p{
-    font-size: 16px;
-    line-height: 120%;
+    margin-top:0;
+    color: var(--color-text-weak);
+    font-size: 14px;
+    line-height: 145%;
 }
 
-.role-box{
+.role-box {
+    width: 100%;
+    background-color:#ECECF0 ;
+    height: auto;
+    padding: 16px;
     border-radius: 10px;
-    padding: 24px;
-    background-color: #ea8282;
+}
+
+.role-box h4{
+    margin-top:0;
+    color: var(--color-text-strong);
+    font-size: 16px;
+}
+
+.role-box p{
+    margin-top:0;
+    color: var(--color-text-weak);
+    font-size: 14px;
+    line-height: 145%;
 }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Artista con Pestañas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="artist-card">
+        <img src="img/snoopy.png" alt="Foto de perfil de Tina0o0" class="artist-profile-img">
+        <h2 class="artist-name">Tina0o0</h2>
+        <p class="artist-title">Diseñadora Gráfica & Ilustradora Digital</p>
+
+        <ul class="tabs-nav">
+            <li id="tab-about" class="tab-btn active" data-tab="about">Acerca de mí</li>
+            <li id="tab-works" class="tab-btn" data-tab="works">Obras Destacadas</li>
+            <li id="tab-contact" class="tab-btn" data-tab="contact">Contacto</li>
+        </ul>
+
+        <div class="tabs-content">
+            <div id="about" class="tab-pane active">
+                <p>Soy Tina0o0, una apasionada artista digital especializada en ilustración con temática de Fórmula 1 y otros estilos creativos. Busco transmitir emociones y dinamismo en cada una de mis obras.</p>
+                
+                <div class="relative-box">
+                    <span class="absolute-child">¡Mira mi posición!</span>
+                    Este contenedor utiliza <code>position: relative</code>, lo que permite que su hijo con <code>position: absolute</code> se mueva respecto a este.
+                </div>
+            </div>
+
+            <div id="works" class="tab-pane">
+                <h4>Galería de Obras Destacadas</h4>
+                <div class="gallery-item">
+                    <img src="img/Charles.jpeg" alt="Ilustración de Charles">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Max.jpeg" alt="Ilustración de Max">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/LionMax.jpeg" alt="Ilustración Lion Max">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/CharlesLeo.jpeg" alt="Ilustración Lion Max">
+                </div>
+                <p style="margin-top: 20px;">Sumérgete en la profundidad y detalle de mis creaciones digitales.</p>
+            </div>
+
+            <div id="contact" class="tab-pane">
+                <h4>Datos de Contacto</h4>
+                <p>Email: <a href="mailto:Tina_tainytan@example.com">Tina_tainytan@example.com</a></p>
+                <p>Instagram: <a href="https://instagram.com/tina_tan0" target="_blank" rel="noopener noreferrer">@tina_tan0</a></p>
+                <p>¡Estoy abierta a colaboraciones y proyectos! No dudes en escribirme.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
