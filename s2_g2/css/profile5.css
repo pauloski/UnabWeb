@@ -1,75 +1,124 @@
-/* profile_S2G2.css — Perfil Irati Azkarate Durana */
+
+:root {
+    --bg-main: #f7f7fa;
+    --text-primary: #1f1f1f;
+    --text-secondary: #6a6a6a;
+    --accent-bg: #f0f0f4;
+    --font-main: Arial, Helvetica, sans-serif;
+}
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
-  margin: 0;
-  padding: 0;
+    background-color: var(--bg-main);
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 30px 20px;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 75%;
+    max-width: 900px;
+    background-color: #ffffff;
+    margin: 50px auto;
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid #dcdcdc;
+}
+
+@media (max-width: 650px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
 }
 
 .back-link {
-  display: inline-block;
-  margin-bottom: 15px;
-  text-decoration: none;
-  color: #1a73e8;
-  font-weight: bold;
-  transition: color 0.2s ease;
+    display: inline-block;
+    margin-bottom: 24px;
+    color: var(--text-secondary);
+    font-size: 15px;
+    text-decoration: none;
 }
+
 .back-link:hover {
-  color: #0b54b6;
+    text-decoration: underline;
 }
 
-.profile {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 30px;
+.profile-card {
+    padding: 28px 0;
+    border-bottom: 1px solid #e0e0e0;
 }
 
-.profile-img {
-  width: 220px;
-  height: 220px;
-  border-radius: 12px;
-  object-fit: cover;
-  border: 3px solid #e5e5e5;
+.profile-photo {
+    width: 190px;
+    height: 190px;
+    border-radius: 12px;
+    object-fit: cover;
+    display: inline-block;
+    margin-right: 28px;
 }
 
 .profile-info {
-  flex: 1;
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 230px);
 }
 
-.profile-info h1 {
-  margin: 0 0 10px;
-  font-size: 1.8rem;
-  color: #111;
+@media (max-width: 650px) {
+    .profile-info {
+        width: 100%;
+        margin-top: 16px;
+    }
 }
 
-.profile-info .role {
-  font-weight: bold;
-  color: #555;
-  margin-bottom: 10px;
+.profile-info h2 {
+    margin: 0 0 6px 0;
+    color: var(--text-primary);
+    font-size: 26px;
+    font-weight: 700;
 }
 
-.profile-info .bio {
-  line-height: 1.5;
-  margin-bottom: 12px;
+.profile-info p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.45;
 }
 
-.profile-info .contact a {
-  color: #1a73e8;
-  text-decoration: none;
-}
-.profile-info .contact a:hover {
-  text-decoration: underline;
+.section {
+    padding: 28px 0;
 }
 
+.section h3 {
+    margin: 0 0 10px 0;
+    color: var(--text-primary);
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.section p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.role-box {
+    background-color: var(--accent-bg);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.role-box h4 {
+    margin: 0 0 8px 0;
+    color: var(--text-primary);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.role-box p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.45;
+}
