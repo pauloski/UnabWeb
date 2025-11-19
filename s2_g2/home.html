@@ -1,102 +1,207 @@
+
+
+
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-    <link rel="stylesheet" href="css/home.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+      <style>
+/* =====================================
+   VARIABLES
+===================================== */
+:root {
+  --font-base: "Inter", system-ui, sans-serif;
+  --color-text: #111;
+  --color-muted: #666;
+  --color-border: #e5e5e5;
+  --color-bg: #fff;
+  --radius: 10px;
+  --color-primary: #027DA2;
+}
+
+/* =====================================
+   BASE
+===================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-base);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.container {
+  width: min(1100px, 90%);
+  margin: auto;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+.header {
+  padding: 2rem 0 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.back-link {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+/* =====================================
+   HERO BANNER
+===================================== */
+/* HERO SOLO IMAGEN */
+.hero {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-full {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid var(--color-border);
+}
+
+
+/* =====================================
+   TEAM SECTION
+===================================== */
+.team-section {
+  padding: 3rem 0;
+}
+
+.team-title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  background: #fafafa;
+  border: 1px solid var(--color-border);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.team-card img {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+}
+
+.team-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.team-card p {
+  color: var(--color-muted);
+}
+
+    </style>
 </head>
 
 <body>
-
-    <div class="banner">
-        <img src="img/profile3/profile6/banner.jpg" alt="Banner">
+  <header class="header">
+    <div class="container">
+      <a href="#" class="back-link">Volver al inicio</a>
+      <h1 class="section-title">Sección 2</h1>
+      <p class="subtitle">Especialistas en diseño responsive y accesibilidad</p>
     </div>
+  </header>
 
-    <main class="team-section-wrapper">
-        <a href="#" class="back-link">&larr; Volver al inicio(pongan el enclace)</a>
+  <!-- HERO BANNER -->
+<section class="hero">
+  <img src="banner.jpeg" alt="Hero banner" class="hero-full" />
+</section>
 
-        <header class="section-header">
-            <h2>Sección 2 <span class="tag">g2</span></h2>
-            <p>el grupo más bakan</p>
-        </header>
+  <main>
+    <section class="team-section container">
+      <h2 class="team-title">Integrantes del equipo</h2>
 
-        <section class="team-content">
-            <h3>Integrantes del equipo </h3>
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="img/Fototobal.jpg" alt="Cristobal Millache" />
+          Belén Pareja
+          <a href="profile2.html"> <h3>Cristobal Millache</h3></a>
+        
+          <p>Diseño Html</p>
+        </div>
 
-            <div class="team-grid">
-                <article class="team-card">
-                    <a href="profile1.html">
-                        <img src="img/profile3/profile1/profile1.jpg" alt="foto 1">
-                    </a>
-                    <div class="card-info">
-                        <h4>Cristobal Millache</h4>
-                        <p>el 1</p>
-                    </div>
-                </article>
+        <div class="team-card">
+          <img src="img/profile2.jpg" alt="Belén Arias" />
+          <a href="profile2.html"> <h3>Belén Arias</h3></a>
+        
+          <p>Desarrollo CSS</p>
+        </div>
 
-                <article class="team-card">
-                    <a href="profile2.html">
-                        <img src="img/profile3/profile2/profile2.jpg" alt="foto 2">
-                    </a>
-                    <div class="card-info">
-                        <h4>Belén Arias</h4>
-                        <p>el 2</p>
-                    </div>
-                </article>
+        <div class="team-card">
+          <img src="img/profile3.jpg" alt="Paola Polanco" />
+          <a href="profile3.html"> <h3>Paola</h3></a>
+          
+          <p>Estructura HTML</p>
+        </div>
 
-                <article class="team-card">
-                    <a href="profile3.html">
-                        <img src="img/profile3/profile3/profile3.jpg" alt="Foto 3">
-                    </a>
-                    <div class="card-info">
-                        <h4>Paola Polanco</h4>
-                        <p>el 3</p>
-                    </div>
-                </article>
+        <div class="team-card">
+          <img src="img/profile4.jpeg" alt="Belén Pareja" />
+          <a href="profile4.html"> <h3>Belén Pareja</h3></a>
+          <p>Testing & QA</p>
+        </div>
 
-                <article class="team-card">
-                    <a href="profile4.html">
-                        <img src="img/profile3/profile4/profile4.jng" alt="foto 4">
-                    </a>
-                    <div class="card-info">
-                        <h4>Belén Parejas</h4>
-                        <p> el 4</p>
-                    </div>
-                </article>
+        <div class="team-card">
+          <img src="img/profile5.jpeg" alt="Irati Azkarate" />
+          <a href="profile5.html"> <h3>Irati Azkarate</h3></a>
+          
+          <p>Coordinación</p>
+        </div>
 
-                <article class="team-card">
-                    <a href="profile5.html">
-                        <img src="img/profile3/profile5/irati.jpeg" alt="Foto 5">
-                    </a>
-                    <div class="card-info">
-                        <h4>Irati Azkarate</h4>
-                        <p> el 5</p>
-                    </div>
-                </article>
-                 <article class="team-card">
-                    <a href="profile6.html">
-                        <img src="img/profile3/profile6/profile6.jpg" alt="6">
-                    </a>
-                    <div class="card-info">
-                        <h4>Antonia Lee</h4>
-                        <p>el 6</p>
-                </article>
-                <article class="team-card">
-                    <a href="profile7.html">
-                        <img src="img/profile3/profile7/profile7.jpg" alt="7">
-                    </a>
-                    <div class="card-info">
-                        <h4>Matilde Rojas </h4>
-                        <p>el 7</p>  
-                </article>    
-            </div>
-        </section>
-    </main>
 
+            <div class="team-card">
+          <img src="img/profile6.jpg" alt="Antonia Lee" />
+              <a href="profile6.html"> <h3>Antonia Lee</h3></a>
+        <p>Jefa de grupo</p>
+        </div>
+
+
+                 <div class="team-card">
+          <img src="img/profile7.jpeg" alt="Matilde Rojas" />
+          <a href="profile7.html"><h3>Matilde Rojas</h3></a>
+          
+          <p>Coordinación</p>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
-
 </html>
+
+
+
+
+
 
 
