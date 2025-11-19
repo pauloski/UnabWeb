@@ -1,0 +1,115 @@
+:root{
+    --color-bg:#f8f8f8;
+    --color-text-strong: #222;
+    --color-text-weak: #6c757d;
+    --font: Arial, sans-serif;   
+}
+
+body{
+background-color: var(--color-bg);
+font-family: var(--font);
+}
+
+.container{
+width:70%;
+height:auto;
+background-color: #fff;
+margin: 60px auto 60px auto;
+border: 1px solid #ddd;
+padding: 16px;
+border-radius: 10px;
+}
+
+@media (max-width:480px){
+    .container{
+        width: 100%;
+        margin:0;
+    }
+}
+
+.back-link{
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--color-text-weak);
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.profile-card {
+    padding: 32px;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-photo{
+width: 200px;
+height: 200px;
+border-radius: 10px;
+display: inline-block;
+margin-right: 32px;
+}
+
+.profile-info {
+display: inline-block;
+vertical-align: top;
+width: calc(100% - 264px); 
+}
+
+@media(max-width: 600px){
+   .profile-info{
+    width:100%
+}
+}
+
+.profile-info h2{
+    margin-top:0;
+    color: var(--color-text-strong);
+    font-size: 24px;
+}
+
+.profile-info p{
+    margin-top:0;
+    color: var(--color-text-weak);
+    font-size: 16px;
+    line-height: 145%;
+}
+
+.section{
+    padding: 32px;
+}
+
+.section h3{
+    margin-top:0;
+    color: var(--color-text-strong);
+    font-size: 18px;
+}
+
+.section p{
+    margin-top:0;
+    color: var(--color-text-weak);
+    font-size: 14px;
+    line-height: 145%;
+}
+
+.role-box{
+    width: 100%;
+    background-color:#ECECF0 ;
+    height: auto;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.role-box h4{
+    margin-top:0;
+    color: var(--color-text-strong);
+    font-size: 16px;
+}
+
+.role-box p{
+    margin-top:0;
+    color: var(--color-text-weak);
+    font-size: 14px;
+    line-height: 145%;
+}
