@@ -1,1 +1,84 @@
+:root{
+  --color-bg:#c4ffe4;
+  --font:Arial, sans-serif;
+  --color-tect-strong: #000;
+  --color-tect-strong: #6c757d;
+}
 
+body{
+  background-color: var(--color-bg);
+  font-family: var(--font);
+}
+
+.container{
+  width: 846px;
+  heigth: 600px;
+  background-color; #fff;
+  margin: 60px 0 auto 0 auto;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #0000001a;
+}
+
+@media (max-width;480px){
+  .container{
+    margin: 0;
+    width:100%;
+  }
+  
+  }
+
+.back.link{
+  color: var(--color-text-weak);
+  fony-family: var(--font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.312px;
+  margin-bottom: 32px;
+  display: inline-flex;
+}
+
+.profile-card{
+padding: 16px;
+border-bottom: 1px solid #0000001a;
+}
+
+.profile-photo{
+  width: 200px;
+  height: 200px;
+  border-radius:100px;
+  display: inline-block;
+  vertical-aling: top;
+  margin-right: 16px;
+}
+
+.profile-info{
+  width:50%;
+  height: auto;
+  display: inline-block;
+  verical-aling: top;
+}
+
+.section h2{
+font-size: 24px;
+  font-weight:700px;
+  margin-bottom:8px;
+}
+.section{
+padding: 16px;
+}
+.section h3{
+font-size: 18px;
+  font-weight:600px;
+}
+.section p{
+font-size: 18px;
+  font-weight:600px;
+}
+.role-box{
+border-radius: 10px;
+background: #ececfo;
+padding: 24px;
+}
