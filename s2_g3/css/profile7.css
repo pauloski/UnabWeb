@@ -1,7 +1,7 @@
 :root{
-    --color-bg: #b3ffb956;
-    --color-text-xtrong:#ff0000;
-    --color-text-weak:#0084ff; 
+    --color-bg: #efeded;
+    --color-text-xtrong:#222;
+    --color-text-weak:#505050; 
     --font: Helvetica, sans-serif;
 }
 
@@ -13,9 +13,9 @@ font-family: var(--font);
 .container{
 width:70%;
 height:auto;
-background-color: #fff4f5;
+background-color: #fff;
 margin: 60px auto 60px auto; 
-border: 1px solid #470108;
+border: 1px solid #969494;
 padding: 16px;
 border-radius: 10px;
 }
@@ -36,7 +36,7 @@ border-radius: 10px;
 
 .profile card{
     padding: 32px;
-    border-bottom: 1px solid #00ddff;
+    border-bottom: 1px solid #ddd;
 }
 
 .profile-photo{
