@@ -1,11 +1,9 @@
 :root {
-    --color-bg: #005e00;
-    --color-text-strong:#7c1b12;
-    --color-text-weak: #c21000;
-    --font:Times, sans-serif;
+    --color-bg:#a39ab1;
+    --color-text-strong:#560eba;
+    --color-text-weak: #8748df;
+    --font: Helvetica, sans-serif;
 }
-
-
 
 body{
 background-color: var(--color-bg);
@@ -15,9 +13,9 @@ font-family: var(--font);
 .container{
 width:70%;
 height:auto;
-background-color: #065509;
+background-color: #221030;
 margin: 60px auto 60px auto;
-border: 1px solid #96d59d;
+border: 1px solid #9c5ede;
 padding: 16px;
 border-radius: 10px;
 }
