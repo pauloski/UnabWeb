@@ -1,7 +1,7 @@
 :root {
     --color-bg: #7f4ca5;
-    --color-text-strong:#b57edc;
-    --color-text-weak: #dbb6ee;
+    --color-text-strong:#461e63;
+    --color-text-weak: #8541a5;
     --font:Arial, sans-serif;
 }
 
@@ -94,8 +94,8 @@ width: calc(100% - 264px); /*200px foto + 32px margen */
 }
 
 .role-box {
-    width: 100%;
-    background-color:#ECECF0 ;
+    width: 97%;
+    background-color:#f1d3ff ;
     height: auto;
     padding: 16px;
     border-radius: 10px;
@@ -113,3 +113,4 @@ width: calc(100% - 264px); /*200px foto + 32px margen */
     font-size: 14px;
     line-height: 145%;
 }
+
