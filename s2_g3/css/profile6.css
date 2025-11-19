@@ -1,7 +1,7 @@
 :root {
-    --color-bg: #7f4ca5;
-    --color-text-strong:#461e63;
-    --color-text-weak: #8541a5;
+    --color-bg: #bfffaf;
+    --color-text-strong:#047400;
+    --color-text-weak: #3fb136;
     --font:Arial, sans-serif;
 }
 
@@ -13,9 +13,9 @@ font-family: var(--font);
 .container{
 width:70%;
 height:auto;
-background-color: #fff;
+background-color: #f8fff8;
 margin: 60px auto 60px auto;
-border: 1px solid #ddd;
+border: 1px solid #0c8500;
 padding: 16px;
 border-radius: 10px;
 }
@@ -95,7 +95,7 @@ width: calc(100% - 264px); /*200px foto + 32px margen */
 
 .role-box {
     width: 97%;
-    background-color:##e6f4e3 ;
+    background-color:##a7da9c ;
     height: auto;
     padding: 16px;
     border-radius: 10px;
