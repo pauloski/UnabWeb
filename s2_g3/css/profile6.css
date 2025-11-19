@@ -2,7 +2,7 @@
     --color-bg: #d8ffba;
     --color-text-strong: #007111;
     --color-text-weak: #246601;
-    --font:Times, sans-serif;
+    --font:Arial, sans-serif;
 }
 
 body{
@@ -13,9 +13,9 @@ font-family: var(--font);
 .container{
 width:70%;
 height:auto;
-background-color: #a4d97a;
+background-color: #fff;
 margin: 60px auto 60px auto;
-border: 1px solid #0a8800;
+border: 1px solid #ddd;
 padding: 16px;
 border-radius: 10px;
 }
@@ -40,7 +40,7 @@ border-radius: 10px;
 
 .profile-card {
     padding: 32px;
-    border-bottom: 1px solid #158a00;
+    border-bottom: 1px solid #ddd;
 }
 
 .profile-photo{
@@ -94,8 +94,8 @@ width: calc(100% - 264px); /*200px foto + 32px margen */
 }
 
 .role-box {
-    width: 97%;
-    background-color:#bcf0af ;
+    width: 100%;
+    background-color:#f4e3f3 ;
     height: auto;
     padding: 16px;
     border-radius: 10px;
@@ -113,7 +113,3 @@ width: calc(100% - 264px); /*200px foto + 32px margen */
     font-size: 14px;
     line-height: 145%;
 }
-
-
-
-
