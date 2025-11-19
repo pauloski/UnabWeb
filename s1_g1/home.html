@@ -1,17 +1,175 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title> Homepage s1_g1 </title>
-    </head>
-    <body>
-       <h1> Homepage Sección 1 Grupo 1</h1>
-<p>Este es el sitio del grupo 1 sección 1</p>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+      <style>
+/* =====================================
+   VARIABLES
+===================================== */
+:root {
+  --font-base: "Inter", system-ui, sans-serif;
+  --color-text: #111;
+  --color-muted: #666;
+  --color-border: #e5e5e5;
+  --color-bg: #fff;
+  --radius: 10px;
+  --color-primary: #027DA2;
+}
 
-<a href=" https://unabweb.pages.dev/"> Volver al Inicio</a> <br>
-<a href="profile1.html"> perfil 1</a> <br>
-<a href="profile2.html"> perfil 2</a> <br>
-<a href="profile3.html"> perfil 3</a> <br>
-<a href="profile4.html"> perfil 4</a> <br>
+/* =====================================
+   BASE
+===================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-base);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.container {
+  width: min(1100px, 90%);
+  margin: auto;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+.header {
+  padding: 2rem 0 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.back-link {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+/* =====================================
+   HERO BANNER
+===================================== */
+/* HERO SOLO IMAGEN */
+.hero {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-full {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid var(--color-border);
+}
+
+
+/* =====================================
+   TEAM SECTION
+===================================== */
+.team-section {
+  padding: 3rem 0;
+}
+
+.team-title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  background: #fafafa;
+  border: 1px solid var(--color-border);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.team-card img {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+}
+
+.team-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.team-card p {
+  color: var(--color-muted);
+}
+
+    </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="#" class="back-link">Volver al inicio</a>
+      <h1 class="section-title">Sección 2</h1>
+      <p class="subtitle">Especialistas en diseño responsive y accesibilidad</p>
+    </div>
+  </header>
+
+  <!-- HERO BANNER -->
+<section class="hero">
+  <img src="img/group-photo.jpg" alt="Hero banner" class="hero-full" />
+</section>
+
+  <main>
+    <section class="team-section container">
+      <h2 class="team-title">Integrantes del equipo</h2>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="img/profile1/profile-photo.jpg" alt="Marco Torres" />
+          <a href="profile1.html"> <h3>Marco Torres</h3></a>
+          <p>Diseñador Gráfico</p>
+        </div>
+
+        <div class="team-card">
+          <img src="img/profile2/profile-photo.jpg" alt="Namu Barrales" />
+          <a href="profile2.html"><h3>Namu Barrales</h3></a>
+          <p>Diseñadora Gráfica y Publicista</p>
+        </div>
+
+        <div class="team-card">
+          <img src="img/profile3/profile-photo.jpg" alt="Valetina Muñoz" />
+          <a href="profile3.html"> <h3>Valetina Muñoz</h3></a>
+          <p>Diseñadora Gráfica</p>
+        </div>
+
+        <div class="team-card">
+          <img src="img/profile4/perfil 1.png" alt="Daring Pinol" />
+          <a href="profile4.html"> <h3>Daring Pinol</h3> </a>
+          <p>Diseñadora Gráfica</p>
+        </div>
+
+    
+      </div>
+    </section>
+  </main>
+</body>
+</html>
 
 
