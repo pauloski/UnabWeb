@@ -1,7 +1,7 @@
 :root {
-    --color-bg: #f8f8f8;
+    --color-bg: #ffffff;
     --color-text-strong:#222;
-    --color-text-weak: #636262;
+    --color-text-weak: #222;
     --font:Arial, sans-serif;
 }
 
@@ -13,7 +13,7 @@ font-family: var(--font);
 .container{
 width:70%;
 height:auto;
-background-color: #fff;
+background-color: #ef8888;
 margin: 60px auto 60px auto;
 border: 1px solid #ddd;
 padding: 16px;
@@ -40,7 +40,7 @@ border-radius: 10px;
 
 .profile-card {
     padding: 32px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #e97777;
 }
 
 .profile-photo{
