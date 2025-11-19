@@ -95,7 +95,7 @@ width: calc(100% - 264px); /*200px foto + 32px margen */
 
 .role-box {
     width: 97%;
-    background-color:#a7da9c ;
+    background-color: #d3fdca;
     height: auto;
     padding: 16px;
     border-radius: 10px;
@@ -113,4 +113,5 @@ width: calc(100% - 264px); /*200px foto + 32px margen */
     font-size: 14px;
     line-height: 145%;
 }
+
 
