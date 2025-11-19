@@ -13,9 +13,9 @@ font-family: var(--font);
 .container{
 width:70%;
 height:auto;
-background-color: #fff;
+background-color: #d3e1d1;
 margin: 60px auto 60px auto;
-border: 1px solid #ddd;
+border: 1px solid #d3e1d1;
 padding: 16px;
 border-radius: 10px;
 }
