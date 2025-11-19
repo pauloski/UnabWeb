@@ -50,9 +50,9 @@ body {
 }
 
 .profile-photo {
-    width: 190px;
-    height: 190px;
-    border-radius: 12px;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
     object-fit: cover;
     display: inline-block;
     margin-right: 28px;
@@ -61,7 +61,7 @@ body {
 .profile-info {
     display: inline-block;
     vertical-align: top;
-    width: calc(100% - 230px);
+    width: calc(100% - 250px);
 }
 
 @media (max-width: 650px) {

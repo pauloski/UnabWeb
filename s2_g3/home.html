@@ -1,1 +1,219 @@
-Hola mundo somos el grupo 50/50
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+      <style>
+/* =====================================
+   VARIABLES
+===================================== */
+:root {
+  --font-base: "Inter", system-ui, sans-serif;
+  --color-text: #111;
+  --color-muted: #666;
+  --color-border: #e5e5e5;
+  --color-bg: #fff;
+  --radius: 10px;
+  --color-primary: #027DA2;
+}
+
+/* =====================================
+   BASE
+===================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-base);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.container {
+  width: min(1100px, 90%);
+  margin: auto;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+.header {
+  padding: 2rem 0 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.back-link {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+/* =====================================
+   HERO BANNER
+===================================== */
+/* HERO SOLO IMAGEN */
+.hero {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-full {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid var(--color-border);
+}
+
+
+/* =====================================
+   TEAM SECTION
+===================================== */
+.team-section {
+  padding: 3rem 0;
+}
+
+.team-title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  background: #fafafa;
+  border: 1px solid var(--color-border);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.team-card img {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+}
+
+.team-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.team-card p {
+  color: var(--color-muted);
+}
+
+    </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="https://unabweb.pages.dev/" class="back-link">Volver al inicio</a>
+      <h1 class="section-title">Sección 2 Grupo3</h1>
+      <p class="subtitle">Especialistas en diseño responsive y accesibilidad</p>
+    </div>
+  </header>
+
+  <!-- HERO BANNER -->
+<section class="hero">
+  <img src="https://placehold.co/1600x500" alt="Hero banner" class="hero-full" />
+</section>
+
+  <main>
+    <section class="team-section container">
+      <h2 class="team-title">Integrantes del equipo</h2>
+
+      <div class="team-grid">
+        
+        <div class="team-card">
+        <img src="img/profile1/profile1.jpg.jpg" alt="Andrés López" />
+            <a href="profile1.html"><h3>Anais Castillo</h3></a>  
+          <p>Diseño Visual</p>
+        </div>
+
+        <div class="team-card">
+         <img src="img/profile2/profile2/profile2.jpg" alt="Anasol Gonzalez" />
+           <a href="profile2.html"><h3>Anasol Gonzalez</h3></a>  
+          <p>Desarrollo CSS</p>
+        </div>
+
+        <div class="team-card">
+          <img src="img/profile3/profile3.jpg" alt="Matías Fernández" />
+           <a href="profile3.html"><h3>Sebastián Gutiérrez</h3></a>
+          <p>Estructura HTML</p>
+        </div>
+
+        <div class="team-card">
+          <img src="img/profile4/profile4.jpg" alt="Isidora Muñoz" />
+          <a href="profile4.html"><h3>Dante Trujillo</h3></a>
+          
+          <p>Testing & QA</p>
+        </div>
+
+        <div class="team-card">
+          <img src="img/profile5/Profile5.jpg" alt="Joaquín Vargas" />
+          <a href="profile5.html"><h3>Catalina Fuentes</h3></a>
+          <p>Coordinación</p>
+        </div>
+
+ <div class="team-card">
+          <img src="img/profile6/Profile6.png" alt="Gaspar Miño" />
+          <a href="profile6.html"><h3>Gaspar Miño</h3></a>
+          <p>Management</p>
+        </div>
+
+
+ <div class="team-card">
+          <img src="img/profile7/Profile7.jpeg" alt="Joaquín Vargas" />
+   <a href="profile7.html"><h3>Benjamin Maturana</h3></a>
+          
+          <p>Coordinación</p>
+        </div>        
+
+
+        
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

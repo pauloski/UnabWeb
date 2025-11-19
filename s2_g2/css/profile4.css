@@ -1,19 +1,19 @@
 :root {
-    --color-bg: #f8f8f8;
-    --color-text-strong:#222;
-    --color-text-weak: #636262;
+    --color-bg: #ffffff;
+    --color-text-strong:#000000;
+    --color-text-weak: #ffffff;
     --font:Arial, sans-serif;
 }
 
 body{
-background-color: var(--color-bg);
+background-color: #ffffff;
 font-family: var(--font);
 }
 
 .container{
 width:70%;
 height:auto;
-background-color: #fff;
+background-color: #b84e6c;
 margin: 60px auto 60px auto;
 border: 1px solid #ddd;
 padding: 16px;
@@ -30,7 +30,7 @@ border-radius: 10px;
 .back-link {
     display: inline-block;
     margin-bottom: 20px;
-    color: var(--color-text-weak);
+    color: #000000;
     text-decoration: none;
 }
 
@@ -40,21 +40,21 @@ border-radius: 10px;
 
 .profile-card {
     padding: 32px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #eea7b7;
 }
 
 .profile-photo{
-width: 200px;
-height: 200px;
-border-radius: 10px;
-display: inline-block;
-margin-right: 32px
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 32px
 }
 
 .profile-info{
 display: inline-block;
 vertical-align: top;
-width: calc(100% - 264px); /*200px foto + 32px margen */
+width: calc(100%-264px);
 }
 
 @media(max-width: 600px){
@@ -65,13 +65,13 @@ width: calc(100% - 264px); /*200px foto + 32px margen */
 
 .profile-info h2{
     margin-top:0;
-    color: var(--color-text-strong);
+    color: #ffffff;
     font-size: 24px;
 }
 
 .profile-info p{
     margin-top:0;
-    color: var(--color-text-weak);
+    color: #ffffff;
     font-size: 16px;
     line-height: 145%;
 }
@@ -82,20 +82,20 @@ width: calc(100% - 264px); /*200px foto + 32px margen */
 
 .section h3{
     margin-top:0;
-    color: var(--color-text-strong);
+    color: #ffffff;
     font-size: 18px;
 }
 
 .section p{
     margin-top:0;
-    color: var(--color-text-weak);
+    color: #ffffff;
     font-size: 14px;
     line-height: 145%;
 }
 
 .role-box {
     width: 100%;
-    background-color:#ECECF0 ;
+    background-color:#8b274e ;
     height: auto;
     padding: 16px;
     border-radius: 10px;
@@ -103,13 +103,13 @@ width: calc(100% - 264px); /*200px foto + 32px margen */
 
 .role-box h4{
     margin-top:0;
-    color: var(--color-text-strong);
+    color: #ffffff;
     font-size: 16px;
 }
 
 .role-box p{
     margin-top:0;
-    color: var(--color-text-weak);
+    color: #ea6293;
     font-size: 14px;
     line-height: 145%;
 }
