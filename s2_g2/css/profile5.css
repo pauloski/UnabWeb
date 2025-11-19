@@ -61,7 +61,7 @@ body {
 .profile-info {
     display: inline-block;
     vertical-align: top;
-    width: calc(100% - 230px);
+    width: calc(100% - 250px);
 }
 
 @media (max-width: 650px) {
