@@ -1,46 +1,50 @@
 :root {
-    --color-bg: #ffffff;
-    --color-text-strong:#000000;
+    --color-bg: #eb85a2;
+    --font: Arial, sans-serif;
+    --color-text-strong: #000;
     --color-text-weak: #ffffff;
-    --font:Arial, sans-serif;
 }
 
 body{
-background-color: #ffffff;
-font-family: var(--font);
+    background-color: #eb85a2;
+    font-family: var(--font);
 }
 
 .container{
-width:70%;
-height:auto;
-background-color: #b84e6c;
-margin: 60px auto 60px auto;
-border: 1px solid #ddd;
-padding: 16px;
-border-radius: 10px;
+    width: 70%;
+    height: auto;
+    background-color: #f5a4c9;
+    margin: 60px auto;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid #0000001a;
+
 }
 
-@media(max-width: 600px){
+@media (max-width:480px){
     .container{
-        width:100%;
-        margin: 0;
+    margin: 0;
+    width: 100%;
     }
+    
 }
 
-.back-link {
-    display: inline-block;
-    margin-bottom: 20px;
-    color: #000000;
-    text-decoration: none;
+.back-link{
+    color: var(--color-text-weak);
+    font-family: var(--font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 32px;
+    display: inline-flex;
+
 }
 
-.back-link:hover {
-    text-decoration: underline;
-}
+.profile-card{
+    padding: 16px;
+    border-bottom: 1px solid #f7c8e2;
 
-.profile-card {
-    padding: 32px;
-    border-bottom: 1px solid #eea7b7;
 }
 
 .profile-photo{
@@ -48,68 +52,40 @@ border-radius: 10px;
     height: 200px;
     border-radius: 10px;
     display: inline-block;
-    margin-right: 32px
+    vertical-align: top;
+    margin-right: 16px;
+    
 }
 
 .profile-info{
-display: inline-block;
-vertical-align: top;
-width: calc(100%-264px);
-}
-
-@media(max-width: 600px){
-   .profile-info{
-    width:100%
-}
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .profile-info h2{
-    margin-top:0;
-    color: #ffffff;
     font-size: 24px;
-}
-
-.profile-info p{
-    margin-top:0;
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 145%;
+    font-weight: 700;
+    margin-bottom: 8px;
 }
 
 .section{
-    padding: 32px;
+    padding: 16px;
 }
 
 .section h3{
-    margin-top:0;
-    color: #ffffff;
     font-size: 18px;
+    font-weight: 600;
 }
 
 .section p{
-    margin-top:0;
-    color: #ffffff;
-    font-size: 14px;
-    line-height: 145%;
-}
-
-.role-box {
-    width: 100%;
-    background-color:#8b274e ;
-    height: auto;
-    padding: 16px;
-    border-radius: 10px;
-}
-
-.role-box h4{
-    margin-top:0;
-    color: #ffffff;
     font-size: 16px;
+    line-height: 120%;
 }
 
-.role-box p{
-    margin-top:0;
-    color: #ea6293;
-    font-size: 14px;
-    line-height: 145%;
+.role-box{
+    border-radius: 10px;
+    padding: 24px;
+    background-color: #ea6c90;
 }
