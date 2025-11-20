@@ -1,3 +1,10 @@
+Los Nugu = s1_g1
+Link Trello: https://trello.com/b/vfx3cjDZ/los-nugu
+
+porfile1 = Marco Torres;
+profile2 = Constanza Barrales;
+profile3 = Valentina Muñoz;
+profile4 = Darin Pinol;
 # 💻 Proyecto Colaborativo de Diseño Web - Primer Año
 
 ¡Bienvenidos al repositorio central del proyecto de **Diseño Web**!
@@ -69,6 +76,69 @@ root/
 
 ---
 
+## Estructura de Ramas
+
+Para gestionar la colaboración y producción, utilizamos:  
+
+- **main**: rama de producción, conectada a Cloudflare.  
+- **dev**: rama de integración entre grupos.  
+- **Ramas por grupo**: cada grupo trabajará en su propia rama, con el mismo nombre que su carpeta:  
+
+s1_g1. 
+s1_g2. 
+s1_g3. 
+s1_g4. 
+s2_g1. 
+s2_g2. 
+s2_g3.  
+
+
+## Equipos
+
+Los Nugu = s1_g1. 
+Link Trello:  https://trello.com/b/vfx3cjDZ/los-nugu
+
+porfile1 = Marco Torres;  
+profile2 = Constanza Barrales;  
+profile3 = Valetina Muñoz
+profile4 =. Darin Pinol
+   
+Equipo Dinamita = s1_g2. 
+Link Trello: https://trello.com/b/z05U6Mxt/equipo-dinamita. 
+profile1 = Pedro Martens. 
+profile2 = Javiera Nuñez. 
+profile3 = Annyelit Calderón. 
+profile4 = Antonia Zúñiga. 
+profile5 = Kimmberlly Coronado. 
+profile6 = Almendra Plaza. 
+
+s2_g1 =  Cinnamonroll.  
+trello: https://trello.com/b/nJ9qQgW5/home-cinnamoroll.    
+profile 1: Paula Prieto,    
+profile 2: Susana Alvear,   
+profile 3: Valentina Torres,  
+profile 4: Sofia Santibañez,   
+profile 5:   
+
+
+Home ꉂ(˵˃ ᗜ ˂˵) ⋆˚꩜.ᐟ = s2_g2   
+link trello: https://trello.com/b/U1wDpA3Y/home-ꉂ˵˃-ᗜ-˂˵-⋆˚꩜ᐟ. 
+
+-Cristobal Millache = profile 1. 
+-Belén Arias = profile 2 
+-Paola Polanco = profile 3.  
+-Belén Pareja = profile 4.  
+-Irati Azkarate = profile 5. 
+ -Antonia Lee = profile 6.  
+ -Matilde Rojas = profile7. 
+
+s1_g1
+s1_g2
+s1_g3
+s1_g4
+s2_g1
+s2_g2
+s2_g3
 ## 🌿 Estructura de Ramas
 
 Para gestionar el flujo de colaboración y producción, utilizamos las siguientes ramas principales:
@@ -84,7 +154,7 @@ Cada grupo trabajará en su propia rama, la cual debe tener el mismo nombre que 
 | :--- | :--- | :--- |
 | `s1_g1` | **Equipo Los Nugu 🐙** | [unabweb.pages.dev/s1_g1/home](https://unabweb.pages.dev/s1_g1/home) |
 | `s1_g2` | **Equipo Dinamita 💥** | [unabweb.pages.dev/s1_g2/home](https://unabweb.pages.dev/s1_g2/home) |
-| `s1_g3` | **(pendiente de asignación)** | |
+| `s1_g3` | **₍^. .^₎Ⳋ** | [unabweb.pages.dev/s1_g3/home](https://unabweb.pages.dev/s1_g3/home)  |
 | `s1_g4` | **Equipo Masturblero 🎲** | [unabweb.pages.dev/s1_g4/home](https://unabweb.pages.dev/s1_g4/home) |
 | `s2_g1` | **Equipo Cinnamonroll 🍥** | [unabweb.pages.dev/s2_g1/home](https://unabweb.pages.dev/s2_g1/home) |
 | `s2_g2` | **Equipo Home 🌸** | [unabweb.pages.dev/s2_g2/home](https://unabweb.pages.dev/s2_g2/home) |
@@ -150,7 +220,7 @@ A continuación se detallan los grupos activos con sus enlaces de gestión (Trel
 ### 🐙 Los Nugu — `s1_g1`
 
 * **Home:** [https://unabweb.pages.dev/s1_g1/home](https://unabweb.pages.dev/s1_g1/home)
-* **Trello:** (pendiente)
+* **Trello:** [https://trello.com/b/vfx3cjDZ/los-nugu](https://trello.com/b/vfx3cjDZ/los-nugu)
 * **Integrantes:**
     * Marco Torres – [Profile 1](https://unabweb.pages.dev/s1_g1/profile1)
     * Constanza Barrales – [Profile 2](https://unabweb.pages.dev/s1_g1/profile2)
@@ -169,6 +239,21 @@ A continuación se detallan los grupos activos con sus enlaces de gestión (Trel
     * Kimmberlly Coronado – [Profile 5](https://unabweb.pages.dev/s1_g2/profile5)
     * Almendra Plaza – [Profile 6](https://unabweb.pages.dev/s1_g2/profile6)
 
+
+### ₍^. .^₎Ⳋ — `s1_g3`
+
+* **Home:** [https://unabweb.pages.dev/s1_g2/home](https://unabweb.pages.dev/s1_g2/home)
+* **Trello:** [https://trello.com/b/OzAcFQG5/%E2%82%8D-%E2%82%8E%E2%B3%8B](https://trello.com/b/OzAcFQG5/%E2%82%8D-%E2%82%8E%E2%B3%8B)
+* **Integrantes:**
+    * nombre – [Profile 1](https://unabweb.pages.dev/s1_g3/profile1)
+    * nombre – [Profile 2](https://unabweb.pages.dev/s1_g3/profile2)
+    * nombre – [Profile 3](https://unabweb.pages.dev/s1_g3/profile3)
+    * nombre – [Profile 4](https://unabweb.pages.dev/s1_g3/profile4)
+    * nombre – [Profile 5](https://unabweb.pages.dev/s1_g3/profile5)
+    * nombre – [Profile 6](https://unabweb.pages.dev/s1_g3/profile6)
+
+
+
 ### 🎲 Masturblero — `s1_g4`
 
 * **Home:** [https://unabweb.pages.dev/s1_g4/home](https://unabweb.pages.dev/s1_g4/home)
@@ -181,6 +266,8 @@ A continuación se detallan los grupos activos con sus enlaces de gestión (Trel
     * Antonia López – [Profile 5](https://unabweb.pages.dev/s1_g4/profile5)
 
 ### 🍥 Cinnamonroll — `s2_g1`
+
+
 
 * **Home:** [https://unabweb.pages.dev/s2_g1/home](https://unabweb.pages.dev/s2_g1/home)
 * **Trello:** [https://trello.com/b/nJ9qQgW5/home-cinnamoroll](https://trello.com/b/nJ9qQgW5/home-cinnamoroll)
@@ -216,3 +303,4 @@ A continuación se detallan los grupos activos con sus enlaces de gestión (Trel
     * Catalina Fuentes – [Profile 5](https://unabweb.pages.dev/s2_g3/profile5)
     * Gaspar Miño – [Profile 6](https://unabweb.pages.dev/s2_g3/profile6)
     * Benjamín Maturana – [Profile 7](https://unabweb.pages.dev/s2_g3/profile7)
+
