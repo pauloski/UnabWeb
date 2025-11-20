@@ -304,3 +304,93 @@ A continuación se detallan los grupos activos con sus enlaces de gestión (Trel
     * Gaspar Miño – [Profile 6](https://unabweb.pages.dev/s2_g3/profile6)
     * Benjamín Maturana – [Profile 7](https://unabweb.pages.dev/s2_g3/profile7)
 
+## 📘 Rúbrica de Evaluación — Proyecto Colaborativo de Diseño Web (1er Año)
+
+### 📏 Escala de Evaluación
+| Nivel | Valor | Descripción |
+|-------|-------|-------------|
+| **4 – Excelente** | 4 pts | Cumple completamente, sin errores relevantes. |
+| **3 – Bueno** | 3 pts | Cumple con detalles menores. |
+| **2 – Suficiente** | 2 pts | Cumple parcialmente; fallas importantes. |
+| **1 – Insuficiente** | 1 pt | No cumple lo solicitado. |
+
+---
+
+## 1️⃣ Cumplimiento Técnico – Integración en GitHub & Cloudflare *(Individual)*
+
+### Criterios
+- Ubicación correcta dentro de la carpeta del grupo.
+- Navegación sin errores 404.
+- Imágenes bien vinculadas.
+- Integración limpia en `dev` y posteriormente en `main`.
+
+| Nivel | Descripción |
+|-------|-------------|
+| **4 – Excelente** | Se integra correctamente a `main`. Todo funciona sin errores: rutas correctas, imágenes cargan, estructura ordenada. |
+| **3 – Bueno** | Llega a `main` con detalles menores (nombres mal escritos, estilos faltantes pero no críticos). |
+| **2 – Suficiente** | Llega solo a `dev` o presenta errores importantes que impiden pasar a `main` (rutas rotas, carpetas mal ubicadas). |
+| **1 – Insuficiente** | No logra integrarse: desordena la estructura, sube archivos a `main`, rompe navegación o genera errores críticos. |
+
+---
+
+## 2️⃣ Cumplimiento de Diseño *(Individual)*
+
+### Criterios
+- Uso de foto real del estudiante.
+- Aplicación correcta de estilos CSS.
+- Coherencia visual con la maqueta.
+- Personalización que aporta al diseño final.
+
+| Nivel | Descripción |
+|-------|-------------|
+| **4 – Excelente** | Diseño totalmente logrado: foto real, estilos completos, visual coherente y bien presentado. |
+| **3 – Bueno** | Diseño correcto pero con detalles (usa foto dummy, falta algún estilo o está incompleto). |
+| **2 – Suficiente** | Diseño parcial: estructura básica, estilos pobres, falta foto real o no sigue la maqueta. |
+| **1 – Insuficiente** | No cumple con el diseño solicitado: sin estilos, sin foto real, o sin relación con el proyecto. |
+
+---
+
+## 3️⃣ Avance y Compromiso *(Individual)*
+
+### Criterios
+- Progreso clase a clase.
+- Cumplimiento de fechas.
+- Responsabilidad en la entrega.
+- Participación real dentro de su grupo.
+
+| Nivel | Descripción |
+|-------|-------------|
+| **4 – Excelente** | Avanza en cada clase, entrega a tiempo y mantiene su sección lista para integración. |
+| **3 – Bueno** | Avanza bien, con leves retrasos que no afectan al grupo. |
+| **2 – Suficiente** | Atrasos que generan demoras para el grupo o falta de consistencia en su avance. |
+| **1 – Insuficiente** | No avanza, no entrega o genera carga extra para el resto del equipo. |
+
+---
+
+## 4️⃣ Trabajo Colaborativo *(Grupal)*
+
+### Criterios
+- Entregan home completo del grupo.
+- Perfiles completos y funcionales.
+- Portada del grupo integrada.
+- Miniatura agregada al `index` principal.
+- Coordinación interna del equipo.
+
+| Nivel | Descripción |
+|-------|-------------|
+| **4 – Excelente** | Llegan a `main` con todo completo y funcionando: home, perfiles, portada e imagen miniatura en el index. Excelente coordinación. |
+| **3 – Bueno** | Llegan a `main` pero con detalles menores (faltó una imagen, un perfil incompleto, etc.). |
+| **2 – Suficiente** | Integración parcial: errores de navegación, portada faltante o diseño incompleto. |
+| **1 – Insuficiente** | El grupo no logra integrar su trabajo o no presenta un home funcional. |
+
+---
+
+## 📊 Tabla Final de Evaluación
+
+| Categoría | Puntaje Máximo | Obtenido |
+|-----------|----------------|----------|
+| Cumplimiento Técnico | 4 pts | |
+| Cumplimiento de Diseño | 4 pts | |
+| Avance y Compromiso | 4 pts | |
+| Trabajo Colaborativo | 4 pts | |
+| **TOTAL** | **16 pts** | **/16** |
