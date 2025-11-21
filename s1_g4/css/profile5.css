@@ -87,6 +87,7 @@ width: calc(100% - 264px);
     height: auto;
     padding: 16px;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 .role-box h4{
     margin-top:0;
