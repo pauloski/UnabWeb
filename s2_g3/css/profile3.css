@@ -1,12 +1,12 @@
-:root{
-    --color-bg: #efeded;
-    --color-text-xtrong:#222;
-    --color-text-weak:#505050; 
-    --font: Helvetica, sans-serif;
+:root {
+    --color-bg: #f8f8f8;
+    --color-text-strong:#222;
+    --color-text-weak: #636262;
+    --font:Arial, sans-serif;
 }
 
 body{
-background-color:var(--color-bg);
+background-color: var(--color-bg);
 font-family: var(--font);
 }
 
@@ -14,37 +14,41 @@ font-family: var(--font);
 width:70%;
 height:auto;
 background-color: #fff;
-margin: 60px auto 60px auto; 
-border: 1px solid #969494;
+margin: 60px auto 60px auto;
+border: 1px solid #ddd;
 padding: 16px;
 border-radius: 10px;
 }
 
-@media(max-width:600px){
+@media(max-width: 600px){
     .container{
-        width: 100%;
+        width:100%;
         margin: 0;
     }
 }
 
-.back-link{
-    display:inline-block;
+.back-link {
+    display: inline-block;
     margin-bottom: 20px;
     color: var(--color-text-weak);
-    text-decoration: none; 
+    text-decoration: none;
 }
 
-.profile card{
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.profile-card {
     padding: 32px;
     border-bottom: 1px solid #ddd;
 }
 
 .profile-photo{
-width:200px;
+width: 200px;
 height: 200px;
 border-radius: 10px;
 display: inline-block;
-margin-right: 32px;
+margin-right: 32px
 }
 
 .profile-info{
@@ -109,4 +113,3 @@ width: calc(100% - 264px); /*200px foto + 32px margen */
     font-size: 14px;
     line-height: 145%;
 }
-
