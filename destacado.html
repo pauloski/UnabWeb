@@ -1,170 +1,358 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Proyectos Destacados – Diseño Web UNAB</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Syllabus & Portafolio — 1er Año Diseño UNAB</title>
 <link rel="stylesheet" href="css/styles.css">
 
-</head>
+<style>
+  /* --- ESTILOS ESPECÍFICOS PARA ESTA PÁGINA --- */
 
+  /* 1. Syllabus Grid: Diseño tipo "Ficha Técnica" */
+  .syllabus-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--color-border);
+    margin-bottom: 3rem;
+  }
+
+  .syllabus-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .syllabus-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-muted);
+    margin-bottom: 0.2rem;
+    font-weight: 600;
+  }
+
+  .syllabus-value {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-text);
+  }
+
+  @media (min-width: 768px) {
+    .syllabus-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    /* Hacemos que la descripción ocupe todo el ancho */
+    .syllabus-item.full-width {
+      grid-column: 1 / -1;
+    }
+  }
+
+  /* 2. Estilos de la Galería Interactiva */
+  .gallery-container {
+    display: grid;
+    gap: 16px;
+    margin-top: 1rem;
+  }
+  
+  @media (min-width: 700px) {
+    .gallery-container { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  .gallery-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    border: 1px solid var(--color-border);
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .gallery-img:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  /* 3. Modal (Lightbox) */
+  .modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+  }
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80vh;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+  }
+
+  .modal-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* 4. Tablas de Evaluación */
+  .rubric-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .rubric-table th, .rubric-table td {
+    border: 1px solid var(--color-border);
+    padding: 12px;
+    text-align: left;
+  }
+
+  .rubric-table th {
+    background-color: #f4f4f4;
+    font-weight: 600;
+  }
+</style>
+</head>
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="brand">Proyectos Web — 1er Año UNAB</div>
   <ul>
-      <li><a href="index.html">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     <li><a href="project.html">Sobre el proyecto</a></li>
     <li><a href="destacado.html">Proyectos destacados</a></li>
   </ul>
 </nav>
 
+<section class="hero">
+  <h1>Syllabus & Portafolio del Curso</h1>
+  <p>Una visión integral: desde la planificación académica hasta la ejecución técnica en metodologías ágiles.</p>
+</section>
+
 <div class="container">
 
-  <h1>📘 Proyectos Destacados</h1>
-  <p>
-    A través del semestre desarrollamos una serie de ejercicios con enfoque 
-    en **metodologías ágiles, prototipado, desarrollo incremental** y 
-    publicación continua. Aquí encontrarás un recorrido por esos 
-    proyectos, mostrando cómo avanzó el aprendizaje y cómo los estudiantes 
-    aplicaron HTML, CSS, JavaScript, GitHub y Cloudflare Pages.
-  </p>
-
-  <!-- EJERCICIO 1 -->
-  <div class="section">
-    <div class="exercise-header">📐 Ejercicio 1 — Wireframes & Maquetas Figma</div>
-    <small>Primera aproximación al proceso UI</small>
-
-    <p>
-      Iniciamos explorando el flujo del diseño UI: desde los primeros bocetos 
-      hasta la creación de maquetas en Figma. El objetivo era comprender el 
-      proceso antes de tocar código, desarrollando una mirada estructurada 
-      sobre jerarquía visual, layout, navegación y componentes.
-    </p>
-
-    <div class="gallery">
-      <img src="https://placehold.co/800x300" alt="Wireframe 1">
-      <img src="https://placehold.co/800x300" alt="Wireframe 2">
-      <img src="https://placehold.co/800x300" alt="Wireframe 3">
+  <div class="section-title">1. Identificación del Curso</div>
+  <div class="syllabus-grid">
+    <div class="syllabus-item">
+      <span class="syllabus-label">Nombre Curso</span>
+      <span class="syllabus-value">Taller de Diseño Web</span>
     </div>
-
-    <a href="#" class="btn-link" target="_blank">Ver archivo Figma</a>
+    <div class="syllabus-item">
+      <span class="syllabus-label">Código</span>
+      <span class="syllabus-value">DIS-101</span>
+    </div>
+    <div class="syllabus-item">
+      <span class="syllabus-label">Unidad Académica</span>
+      <span class="syllabus-value">Campus Creativo</span>
+    </div>
+    <div class="syllabus-item">
+      <span class="syllabus-label">Créditos SCT</span>
+      <span class="syllabus-value">6 Créditos</span>
+    </div>
+    
+    <div class="syllabus-item full-width">
+      <span class="syllabus-label">Descripción General</span>
+      <span class="syllabus-value">
+        Asignatura teórico-práctica orientada a la comprensión de la arquitectura de la información, 
+        diseño de interfaces (UI) y desarrollo front-end básico. El curso aborda el flujo completo 
+        desde el prototipado en Figma hasta el despliegue en producción usando GitHub y Cloudflare.
+      </span>
+    </div>
   </div>
 
-  <!-- EJERCICIO HOLA MUNDO -->
+  <hr style="border: 0; border-top: 1px solid var(--color-border); margin: 3rem 0;">
+
   <div class="section">
-    <div class="exercise-header">🌍 Ejercicio 1.2 — “Hola Mundo” con MVP</div>
-    <small>Introducción a HTML, CSS, JS y publicación</small>
-
-    <p>
-      Más que un simple “Hola Mundo”, este ejercicio se transformó en un pequeño 
-      MVP donde cada estudiante construyó un proyecto que integraba HTML, CSS, 
-      JavaScript y despliegue.  
-      <br><br>
-      La dinámica fue diferente: no evaluamos archivos aislados. Desde el 
-      comienzo trabajamos bajo una lógica ágil, enseñando qué es un backlog, 
-      cómo usar Kanban en Trello, cómo priorizar y cómo publicar rápidamente.  
+    <h2>📘 Metodología y Avance Semestral</h2>
+    <p style="margin-bottom: 2rem; color: var(--color-muted);">
+      A través del semestre desarrollamos una serie de ejercicios con enfoque en 
+      **metodologías ágiles, prototipado y desarrollo incremental**. Aquí presentamos 
+      el cronograma de trabajo y los resultados obtenidos.
     </p>
 
-    <p>
-      La primera versión se construyó localmente y la segunda ya estuvo en la web, 
-      publicada mediante Cloudflare Pages.
-    </p>
-
-    <div class="gallery">
-      <img src="https://placehold.co/800x300" alt="Hola mundo 1">
-      <img src="https://placehold.co/800x300" alt="Hola mundo 2">
-      <img src="https://placehold.co/800x300" alt="Hola mundo 3">
+    <div class="team-card">
+      <div class="exercise-header">Fase 1: Wireframes & UI (Semanas 1-4)</div>
+      <small>📐 Objetivo: Comprender jerarquía visual y layout antes del código.</small>
+      <p>
+        Iniciamos explorando el flujo del diseño UI: desde los primeros bocetos hasta la creación 
+        de maquetas en Figma. El objetivo era comprender el proceso desarrollando una mirada 
+        estructurada sobre jerarquía visual y componentes.
+      </p>
+      
+      <div class="gallery-container">
+        <img class="gallery-img" src="img/preview01.png" alt="Wireframe a lápiz">
+        <img class="gallery-img" src="https://placehold.co/600x400/e5e5e5/333?text=Figma+UI+Kit" alt="Kit de UI en Figma">
+        <img class="gallery-img" src="https://placehold.co/600x400/e5e5e5/333?text=Prototipo+Alta" alt="Prototipo de Alta Fidelidad">
+      </div>
     </div>
 
-    <a href="#" class="btn-link" target="_blank">Ver proyectos publicados</a>
+    <div class="team-card">
+      <div class="exercise-header">Fase 2: MVP "Hola Mundo" (Semanas 5-8)</div>
+      <small>🌍 Objetivo: Primer despliegue real (HTML/CSS/JS).</small>
+      <p>
+        Más que un simple “Hola Mundo”, construimos un pequeño MVP. Trabajamos bajo una lógica ágil, 
+        enseñando qué es un backlog y cómo usar Kanban en Trello. La primera versión fue local 
+        y la segunda publicada mediante Cloudflare Pages.
+      </p>
+
+      <div class="gallery-container">
+        <img class="gallery-img" src="https://placehold.co/600x400/222/fff?text=Codigo+HTML" alt="Estructura HTML">
+        <img class="gallery-img" src="https://placehold.co/600x400/222/fff?text=Kanban+Trello" alt="Tablero Trello">
+        <img class="gallery-img" src="https://placehold.co/600x400/222/fff?text=Cloudflare+Deploy" alt="Panel Cloudflare">
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="exercise-header">Fase 3: Responsive & Git (Semanas 9-12)</div>
+      <small>🌓 Objetivo: Control de versiones y adaptabilidad móvil.</small>
+      <p>
+        Integramos repositorios Git individuales y estilos avanzados. Se implementó:
+        Layout responsive, Dark Mode toggle con JS y uso de tipografías web.
+      </p>
+
+      <div class="gallery-container">
+        <img class="gallery-img" src="https://placehold.co/600x400/111/eee?text=Mobile+View" alt="Vista Móvil">
+        <img class="gallery-img" src="https://placehold.co/600x400/111/eee?text=Dark+Mode+ON" alt="Modo Oscuro Activado">
+        <img class="gallery-img" src="https://placehold.co/600x400/111/eee?text=Git+Commit" alt="Historial de Commits">
+      </div>
+    </div>
+
+    <div class="team-card" style="border-left: 4px solid #000;">
+      <div class="exercise-header">Fase 4: Proyecto Colaborativo Final (Semanas 13-18)</div>
+      <small>🤝 Objetivo: Simulación de entorno real de desarrollo.</small>
+      <p>
+        Los grupos colaboraron dentro de una arquitectura real: <strong>Ramas por feature, 
+        Pull Requests hacia DEV y Merge a Producción.</strong> El resultado es este portal web.
+      </p>
+      <br>
+      <a class="btn" href="index.html">Ver Resultado Final</a>
+    </div>
+
   </div>
 
-  <!-- EJERCICIO 2.1 -->
+  <hr style="border: 0; border-top: 1px solid var(--color-border); margin: 3rem 0;">
+
   <div class="section">
-    <div class="exercise-header">🌓 Ejercicio 2.1 — Responsive + Dark Mode + Git</div>
-    <small>Layout, interactividad y GitHub conectado a Cloudflare</small>
+    <h2>📊 Sistema de Evaluación</h2>
+    <p>Rúbrica utilizada para la calificación del Proyecto Colaborativo Final.</p>
 
-    <p>
-      Este ejercicio integró todo lo anterior y subió un nivel:  
-    </p>
-
-    <ul>
-      <li>Creación de layout responsive</li>
-      <li>Repositorio Git para cada estudiante</li>
-      <li>Conexión de la rama main a Cloudflare</li>
-      <li>Botón para cambiar el tema (light/dark)</li>
-      <li>Incorporación de Google Fonts</li>
-    </ul>
-
-    <p>
-      Por primera vez gestionaron su propio repositorio real y entendieron 
-      cómo funciona un flujo básico de CI/CD.
-    </p>
-
-    <div class="gallery">
-      <img src="https://placehold.co/800x300" alt="Ejercicio 2.1 A">
-      <img src="https://placehold.co/800x300" alt="Ejercicio 2.1 B">
-      <img src="https://placehold.co/800x300" alt="Ejercicio 2.1 C">
-    </div>
-
-    <a href="#" class="btn-link" target="_blank">Ver trabajos del ejercicio 2.1</a>
-  </div>
-
-  <!-- EJERCICIO 3 -->
-  <div class="section">
-    <div class="exercise-header">📑 Ejercicio 3 — Layout + Tabs Interactivas</div>
-    <small>Transición hacia el proyecto final</small>
-
-    <p>
-      Nos enfocamos principalmente en el layout, la organización del contenido y 
-      la interactividad a través de **tabs** (pestañas).  
-      Este ejercicio introdujo lógica más estructurada en JavaScript y preparó 
-      el camino para el gran proyecto del curso.
-    </p>
-
-    <div class="gallery">
-      <img src="https://placehold.co/800x300" alt="Ejercicio 3 A">
-      <img src="https://placehold.co/800x300" alt="Ejercicio 3 B">
-      <img src="https://placehold.co/800x300" alt="Ejercicio 3 C">
-    </div>
-
-    <a href="#" class="btn-link" target="_blank">Ver ejemplos</a>
-  </div>
-
-  <!-- EJERCICIO 4 -->
-  <div class="section">
-    <div class="exercise-header">🤝 Ejercicio 4 — Trabajo Colaborativo en GitHub</div>
-    <small>Ramas, estructura real y producción continua</small>
-
-    <p>
-      En el ejercicio final los grupos colaboraron dentro de una arquitectura 
-      real de proyecto:  
-    </p>
-
-    <ul>
-      <li>Carpetas de trabajo por grupo</li>
-      <li>Ramas por equipo</li>
-      <li>Pull Requests hacia DEV</li>
-      <li>Integración final hacia PRODUCCIÓN</li>
-    </ul>
-
-    <p>
-      Aquí aplicaron todas las habilidades adquiridas:  
-      <strong>HTML, CSS, layout, responsividad, JS, GitHub, Cloudflare Pages, 
-      trabajo en equipo y documentación.</strong>
-    </p>
-
-    <div class="gallery">
-      <img src="https://placehold.co/800x300" alt="Ejercicio 4 A">
-      <img src="https://placehold.co/800x300" alt="Ejercicio 4 B">
-      <img src="https://placehold.co/800x300" alt="Ejercicio 4 C">
-    </div>
-
-    <a href="#" class="btn-link" target="_blank">Ver repositorios de grupos</a>
+    <table class="rubric-table">
+      <thead>
+        <tr>
+          <th>Criterio</th>
+          <th>Puntaje Máx.</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Cumplimiento Técnico</strong></td>
+          <td>4 pts</td>
+          <td>Integración correcta en GitHub & Cloudflare, sin rutas rotas (404).</td>
+        </tr>
+        <tr>
+          <td><strong>Diseño UI</strong></td>
+          <td>4 pts</td>
+          <td>Estética coherente, uso de fotos reales y CSS avanzado.</td>
+        </tr>
+        <tr>
+          <td><strong>Trabajo Colaborativo</strong></td>
+          <td>4 pts</td>
+          <td>Uso correcto de Ramas, Pull Requests y coordinación de equipo.</td>
+        </tr>
+        <tr>
+          <td><strong>Avance Individual</strong></td>
+          <td>4 pts</td>
+          <td>Constancia clase a clase y cumplimiento de hitos (Sprints).</td>
+        </tr>
+        <tr style="background: #eee;">
+          <td><strong>TOTAL</strong></td>
+          <td><strong>16 pts</strong></td>
+          <td>Nota máxima 7.0 (Escala 60%)</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
 </div>
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption" class="modal-caption"></div>
+</div>
+
+<script>
+  // Obtener el modal
+  var modal = document.getElementById("myModal");
+
+  // Obtener la imagen y insertarla dentro del modal
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  
+  // Seleccionar todas las imágenes con la clase .gallery-img
+  var images = document.querySelectorAll(".gallery-img");
+
+  images.forEach(function(img) {
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+  });
+
+  // Obtener el elemento <span> que cierra el modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // Cuando el usuario hace clic en <span> (x), cerrar el modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+
+  // Cerrar también si se hace clic fuera de la imagen
+  modal.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
 </body>
 </html>
