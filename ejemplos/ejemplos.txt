@@ -40,3 +40,29 @@ UI Test
 UI Review
 
 Publish
+
+
+Extracción de producto
+Bienes y servicios 
+
+Cosecha materia prima 
+procesamiento de productos 
+
+Impacto economico
+
+Servicios 
+
+
+
+Publish library’s Storybook
+Get the Chromatic package
+npmyarn
+npm install --save-dev chromatic
+
+Publish your Storybook
+On the command line, publish to Chromatic’s secure CDN for the first time with the following command:
+
+npx chromatic --project-token=chpt_760144f56b50469
+
+If your Storybook has a custom build script you may have to add options to this command. Learn more
+
