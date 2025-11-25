@@ -4,144 +4,420 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Syllabus & Portafolio — 1er Año Diseño UNAB</title>
-<link rel="stylesheet" href="css/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-  /* --- ESTILOS ESPECÍFICOS PARA ESTA PÁGINA --- */
+  /* --- VARIABLES & RESET --- */
+  :root {
+    --color-primary: #020918;       /* Azul eléctrico */
+    --color-primary-dark: #151d37;
+    --color-accent: #7c3aed;        /* Violeta para degradados */
+    --color-text: #1e293b;          /* Gris muy oscuro para texto */
+    --color-muted: #64748b;         /* Gris medio */
+    --color-bg: #f8fafc;            /* Fondo general muy claro */
+    --color-card: #ffffff;
+    --color-border: #e2e8f0;
+    
+    --radius: 12px;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+    --shadow-md: 0 10px 15px -3px rgba(0,0,0,0.1);
+    --shadow-hover: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+    
+    --font-main: 'Inter', sans-serif;
+  }
 
-  /* 1. Syllabus Grid */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { text-decoration: none; color: inherit; transition: color 0.2s; }
+  ul { list-style: none; }
+
+  /* --- NAVEGACIÓN --- */
+  nav {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky; top: 0; z-index: 100;
+  }
+  .brand { font-weight: 700; font-size: 1.1rem; color: var(--color-primary); }
+  nav ul { display: flex; gap: 1.5rem; }
+  nav ul li a { font-size: 0.95rem; font-weight: 500; color: var(--color-muted); }
+  nav ul li a:hover { color: var(--color-primary); }
+
+  /* --- HERO SECTION --- */
+  .hero {
+    text-align: center;
+    padding: 6rem 1rem 4rem;
+    background: linear-gradient(180deg, #fff 0%, var(--color-bg) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Elemento decorativo de fondo */
+  .hero::before {
+    content: ''; position: absolute; top: -50%; left: 50%; transform: translateX(-50%);
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(37,99,235,0.1) 0%, rgba(255,255,255,0) 70%);
+    border-radius: 50%; z-index: 0; pointer-events: none;
+  }
+
+  .hero h1 {
+    font-size: 3rem; 
+    font-weight: 800; 
+    letter-spacing: -0.03em;
+    margin-bottom: 1rem;
+    position: relative; z-index: 1;
+    background: linear-gradient(135deg, var(--color-text) 0%, var(--color-primary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero p {
+    font-size: 1.25rem; color: var(--color-muted); max-width: 700px; margin: 0 auto;
+    position: relative; z-index: 1;
+  }
+
+  /* --- CONTAINER --- */
+  .container {
+    max-width: 1200px; margin: 0 auto; padding: 0 2rem 4rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  .section-title::before {
+    content: ''; display: block; width: 6px; height: 24px;
+    background: var(--color-primary); border-radius: 4px;
+  }
+
+  /* --- 1. SYLLABUS GRID (Rediseñado) --- */
   .syllabus-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    background: #f9f9f9;
-    padding: 2rem;
+    display: grid; grid-template-columns: 1fr; gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  
+  .syllabus-item {
+    background: var(--color-card);
+    padding: 1.5rem;
     border-radius: var(--radius);
     border: 1px solid var(--color-border);
-    margin-bottom: 3rem;
+    box-shadow: var(--shadow-sm);
+    border-top: 4px solid var(--color-primary); /* Acento de color */
+    transition: transform 0.2s;
   }
+  .syllabus-item:hover { transform: translateY(-3px); }
 
-  .syllabus-item { display: flex; flex-direction: column; }
   .syllabus-label {
-    font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;
-    color: var(--color-muted); margin-bottom: 0.2rem; font-weight: 600;
+    display: block; font-size: 0.75rem; text-transform: uppercase; 
+    letter-spacing: 0.05em; color: var(--color-muted); font-weight: 600; margin-bottom: 0.5rem;
   }
-  .syllabus-value { font-size: 1.1rem; font-weight: 500; color: var(--color-text); }
+  .syllabus-value { font-size: 1.1rem; font-weight: 600; color: var(--color-text); }
 
   @media (min-width: 768px) {
     .syllabus-grid { grid-template-columns: repeat(4, 1fr); }
     .syllabus-item.full-width { grid-column: 1 / -1; }
   }
 
-  /* 2. Galería Mejorada (Cards) */
-  .gallery-container {
-    display: grid;
-    gap: 24px;
-    margin-top: 1rem;
+  /* --- 2. TIMELINE (El viaje digital) --- */
+  /* Contenedor de la línea de tiempo */
+  .timeline-wrapper {
+    position: relative;
+    padding-left: 40px; /* Espacio para la línea vertical */
+    margin-top: 3rem;
+  }
+
+  /* La línea vertical */
+  .timeline-wrapper::before {
+    content: '';
+    position: absolute; left: 14px; top: 0; bottom: 0;
+    width: 2px; background: var(--color-border);
+  }
+
+  .team-card {
+    position: relative;
+    background: var(--color-card);
+    padding: 2rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 3rem; /* Espacio entre Etapas */
+  }
+
+  /* El punto (Dot) en la línea de tiempo */
+  .team-card::before {
+    content: '';
+    position: absolute; left: -33px; top: 2rem;
+    width: 14px; height: 14px;
+    background: var(--color-card);
+    border: 3px solid var(--color-primary);
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 0 0 4px var(--color-bg); /* "Corta" la línea visualmente */
+  }
+
+  .exercise-header {
+    font-size: 1.4rem; font-weight: 700; color: var(--color-text);
+    margin-bottom: 0.5rem;
   }
   
+  small {
+    display: inline-block;
+    background: #eef2ff; color: var(--color-primary);
+    padding: 0.25rem 0.75rem; border-radius: 20px;
+    font-size: 0.85rem; font-weight: 500; margin-bottom: 1rem;
+  }
+
+  .team-card p { color: #475569; margin-bottom: 1rem; }
+  .team-card ul { margin-left: 1.5rem; list-style-type: disc; color: #475569; margin-bottom: 1.5rem; }
+  .team-card li { margin-bottom: 0.3rem; }
+
+  /* --- 3. GALERÍA (Cards Interactivas) --- */
+  .gallery-container {
+    display: grid; gap: 1.5rem; grid-template-columns: 1fr;
+  }
   @media (min-width: 700px) {
     .gallery-container { grid-template-columns: repeat(3, 1fr); }
   }
 
   .gallery-card {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+    background: var(--color-card);
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    transition: all 0.3s ease;
+    display: flex; flex-direction: column;
+  }
+
+  .gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    border-color: rgba(37, 99, 235, 0.3);
   }
 
   .gallery-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: var(--radius);
-    border: 1px solid var(--color-border);
+    width: 100%; height: 200px; object-fit: cover;
     cursor: pointer;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    transition: transform 0.4s ease;
   }
-
-  .gallery-img:hover {
-    transform: scale(1.02);
-    opacity: 0.9;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
+  /* Zoom sutil en la imagen al hover */
+  .gallery-card:hover .gallery-img { transform: scale(1.05); }
 
   .gallery-meta {
-    font-size: 0.9rem;
+    padding: 1rem;
+    display: flex; flex-direction: column; gap: 0.5rem;
+    flex-grow: 1;
+    border-top: 1px solid var(--color-border);
+    position: relative; background: #fff; z-index: 1;
   }
+
+  .gallery-desc { font-size: 0.9rem; color: var(--color-muted); line-height: 1.4; }
   
-  .gallery-desc {
-    color: var(--color-muted);
-    margin-bottom: 6px;
-    line-height: 1.4;
-    display: block;
-  }
-
   .gallery-link {
-    color: var(--color-black);
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 0.85rem;
-    border-bottom: 1px solid transparent;
+    font-size: 0.85rem; font-weight: 600; color: var(--color-primary);
+    margin-top: auto; display: inline-block;
   }
-  .gallery-link:hover { border-bottom: 1px solid var(--color-black); }
+  .gallery-link:hover { text-decoration: underline; }
 
-  /* 3. Modal (Lightbox) */
+  /* --- 4. MODAL --- */
   .modal {
-    display: none; 
-    position: fixed; z-index: 1000; padding-top: 40px;
-    left: 0; top: 0; width: 100%; height: 100%;
-    overflow: auto; background-color: rgba(0,0,0,0.95);
+    display: none; position: fixed; z-index: 1000; left: 0; top: 0;
+    width: 100%; height: 100%; overflow: auto;
+    background-color: rgba(15, 23, 42, 0.95); /* Fondo oscuro azulado */
+    backdrop-filter: blur(5px);
   }
-
   .modal-content {
-    margin: auto; display: block;
-    max-width: 80%; max-height: 70vh;
-    border-radius: 4px;
-    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    margin: 5% auto; display: block; max-width: 90%; max-height: 75vh;
+    border-radius: 8px; box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    animation: fadeIn 0.3s;
   }
+  @keyframes fadeIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
 
   .modal-caption-container {
-    margin: auto;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 20px 0;
+    text-align: center; width: 100%; padding: 20px; color: #fff;
   }
-
-  .modal-text {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    color: #f1f1f1;
-  }
-
+  .modal-text { font-size: 1.2rem; margin-bottom: 1.5rem; color: #e2e8f0; }
+  
   .modal-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #fff;
-    color: #000;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: 600;
-    transition: background 0.3s;
+    padding: 12px 28px; background: var(--color-primary); color: white;
+    border-radius: 30px; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+    transition: all 0.3s;
   }
-  .modal-btn:hover { background: #ddd; }
+  .modal-btn:hover { background: var(--color-primary-dark); transform: scale(1.05); }
 
   .close {
-    position: absolute; top: 15px; right: 35px;
-    color: #f1f1f1; font-size: 40px; font-weight: bold;
-    cursor: pointer;
+    position: absolute; top: 20px; right: 30px; color: #fff;
+    font-size: 40px; font-weight: 300; cursor: pointer; transition: 0.2s;
+  }
+  .close:hover { color: var(--color-primary); transform: rotate(90deg); }
+
+  /* Responsivo ajustes finales */
+  @media (max-width: 600px) {
+    .timeline-wrapper { padding-left: 20px; }
+    .timeline-wrapper::before { left: 6px; }
+    .team-card::before { left: -21px; width: 12px; height: 12px; }
+    .hero h1 { font-size: 2.2rem; }
   }
 
-  /* 4. Tablas */
-  .rubric-table {
-    width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.95rem;
+  /* --- SECCIÓN BITÁCORA (REGISTROS DE CLASE) --- */
+  
+  .records-section {
+    margin-top: 5rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--color-border);
   }
-  .rubric-table th, .rubric-table td {
-    border: 1px solid var(--color-border); padding: 12px; text-align: left;
+
+  /* Estilo base de la tarjeta de registro */
+  .record-card {
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-sm);
+    display: grid;
+    gap: 2rem;
+    align-items: center; /* Centra verticalmente el contenido */
   }
-  .rubric-table th { background-color: #f4f4f4; font-weight: 600; }
+
+  .record-img-container {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    overflow: hidden;
+    border-radius: var(--radius);
+  }
+
+  .record-img-full {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  
+  .record-card:hover .record-img-full {
+    transform: scale(1.03);
+  }
+
+  .record-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+  }
+
+  .record-content p {
+    color: var(--color-muted);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .record-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  /* --- VARIANTES DE LAYOUT --- */
+
+  /* 1. Foto Izquierda / Texto Derecha (Desktop) */
+  .layout-img-left {
+    grid-template-columns: 1fr;
+  }
+
+  /* 2. Texto Izquierda / Foto Derecha (Desktop) */
+  .layout-text-left {
+    grid-template-columns: 1fr;
+  }
+
+  /* 3. Vertical (Foto Arriba / Texto Abajo) */
+  .layout-vertical {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .layout-vertical .record-img-container {
+    /* Más alto para destacar height: 400px;  */
+    margin-bottom: 1.5rem;
+  }
+
+  /* --- RESPONSIVE PARA BITÁCORA --- */
+  @media (min-width: 768px) {
+    /* Activar grid de 2 columnas solo en pantallas grandes */
+    .layout-img-left {
+      grid-template-columns: 1.2fr 1fr; /* Imagen un poco más ancha */
+    }
+    
+    .layout-text-left {
+      grid-template-columns: 1fr 1.2fr;
+    }
+
+    /* Truco para ordenar visualmente el HTML en layout-text-left */
+    .layout-text-left .record-img-container {
+      order: 2; /* Foto a la derecha */
+    }
+    .layout-text-left .record-content {
+      order: 1; /* Texto a la izquierda */
+    }
+  }
+
+  /* Nuevo contenedor para agrupar Foto + Caption */
+  .record-media-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Espacio entre foto y texto */
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Estilos del Caption */
+  .record-caption {
+    font-size: 0.85rem;
+    color: var(--color-muted);
+    font-style: italic;
+    text-align: center; /* Centrado respecto a la foto */
+    line-height: 1.4;
+    padding: 0 4px;
+  }
+
+  /* Estilo del Link dentro del caption */
+  .record-caption a {
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px dotted var(--color-primary);
+    transition: all 0.2s;
+  }
+  
+  .record-caption a:hover {
+    color: var(--color-primary-dark);
+    border-bottom: 1px solid var(--color-primary-dark);
+  }
+
+  /* --- AJUSTE RESPONSIVE (CRÍTICO) --- */
+  @media (min-width: 768px) {
+    /* Ajuste para mover todo el bloque (foto+caption) a la derecha */
+    .layout-text-left .record-media-wrapper {
+      order: 2; 
+    }
+    .layout-text-left .record-content {
+      order: 1;
+    }
+  }
 
 </style>
 </head>
@@ -151,8 +427,7 @@
   <div class="brand">Proyectos Web — 1er Año UNAB</div>
   <ul>
     <li><a href="index.html">Home</a></li>
-    <li><a href="project.html">Sobre el proyecto</a></li>
-    <li><a href="destacado.html">Proyectos destacados</a></li>
+    <li><a href="destacado.html">Destacados</a></li>
   </ul>
 </nav>
 
@@ -164,6 +439,7 @@
 <div class="container">
 
   <div class="section-title">1. Identificación del Curso</div>
+  
   <div class="syllabus-grid">
     <div class="syllabus-item">
       <span class="syllabus-label">Nombre Curso</span>
@@ -184,7 +460,7 @@
     
     <div class="syllabus-item full-width">
       <span class="syllabus-label">Descripción General</span>
-      <span class="syllabus-value">
+      <span class="syllabus-value" style="font-weight: 400; font-size: 1rem; line-height: 1.6;">
         Asignatura teórico-práctica orientada a la comprensión de la arquitectura de la información, 
         diseño de interfaces (UI) y desarrollo front-end básico. El curso aborda el flujo completo 
         desde el prototipado en Figma hasta el despliegue en producción usando GitHub y Cloudflare.
@@ -192,323 +468,370 @@
     </div>
   </div>
 
-  <hr style="border: 0; border-top: 1px solid var(--color-border); margin: 3rem 0;">
 
-  <div class="section">
-    <h2>📘 Metodología y Avance Semestral</h2>
-    <p style="margin-bottom: 2rem; color: var(--color-muted);">
-      A través del semestre desarrollamos una serie de ejercicios con enfoque en 
-      **metodologías ágiles, prototipado y desarrollo incremental**. Aquí presentamos 
-      el cronograma de trabajo y los resultados obtenidos.
-    </p>
 
-    <div class="team-card">
-      <div class="exercise-header">Fase 1: Wireframes & UI (Semanas 1-2)</div>
-      <small>📐 Objetivo: Comprender jerarquía visual y layout antes del código.</small>
-      <p>
-Iniciamos la fase trabajando el concepto de wireframes de baja y mediana fidelidad, entendiendo su propósito dentro del proceso de diseño y cómo nos permiten definir estructura, jerarquía y funcionalidad antes de avanzar al desarrollo visual o al código.
-<ul>
-  <li>Metodologías ágiles aplicadas al diseño</li>
-  <li>Uso de Trello con metodología Kanban</li>
-  <li>Historia de internet y la web</li>
-  <li>Etiquetas HTML básicas</li>
-  <li>Creación de cuentas en Figma y explicación de la interfaz</li>
-  <li>Diseño de wireframes de baja y mediana fidelidad en Figma</li>
-</ul>
-      </p>
-      
-       <div class="gallery-container">
-        <div class="gallery-card">
-          <img class="gallery-img" 
-               src="img/preview15.png" 
-               alt="Bocetos a Lápiz"
-               data-description="Primeros trazos explorando la jerarquía de la información."
-               data-link="https://figma.com/example1">
-          <div class="gallery-meta">
-            <span class="gallery-desc">Exploración de estructura a mano alzada.</span>
-          </div>
+
+
+<div class="records-section">
+    <div style="text-align:center; margin-bottom: 3rem;">
+      <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">📸 Bitácora del Taller</h2>
+      <p style="color: var(--color-muted);">Registros, observaciones y momentos clave del proceso.</p>
+    </div>
+
+
+       <div class="record-card layout-vertical">
+      <div class="record-media-wrapper">
+        <div class="record-img-container">
+          <img src="img/preview07.png" class="record-img-full" alt="Foto Grupal o Evento">
         </div>
-
-        <div class="gallery-card">
-          <img class="gallery-img" 
-               src="img/preview13.png" 
-               alt="UI Kit Básico"
-               data-description="Definición de sistema de diseño: tipografía y colores."
-               data-link="https://figma.com/example2">
-          <div class="gallery-meta">
-            <span class="gallery-desc">Componentes y sistema visual base.</span>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <img class="gallery-img" 
-               src="img/preview11.png" 
-               alt="Prototipo Navegable"
-               data-description="Interacciones básicas y flujo de navegación validado."
-               data-link="https://figma.com/example3">
-          <div class="gallery-meta">
-            <span class="gallery-desc">Prototipo de alta fidelidad listo para código.</span>
-          </div>
+        <div class="record-caption">
+         Ejemplo de proyecto desarrollado por Javiera Nuñez <a href="https://holamundo-a1q.pages.dev/" target="_blank">ver proyecto ↗</a>
+        
         </div>
       </div>
 
 
 
+
+
+      <div class="record-content">
+        <span class="record-tag">Hola Mundo</span>
+        <h3>Ejercicio  inicial</h3>
+        <p>
+    Durante todo el taller trabajamos bajo una estrategia incremental, aplicando principios de metodología ágil. Los primeros proyectos fueron pequeños MVPs de “Hola Mundo”, diseñados para comprender la estructura fundamental de un sitio web. Estos ejercicios iniciales integraban HTML, CSS y JavaScript desde el primer día, evitando la fragmentación típica de “ver primero HTML, luego CSS y al final JavaScript”.</p>
+<b>Desde el inicio entendimos que un sitio web es un sistema completo, no piezas aisladas.</b>
+<p>Cada estudiante publicó su primer “Hola Mundo” en Cloudflare Pages, demostrando que, aunque aún carecía de estilos avanzados o funcionalidades complejas, ya contaban con un sitio real, funcional y en línea. Estos MVPs fueron la base sobre la cual se construyeron proyectos cada vez más completos y desafiantes a lo largo del semestre.
+  </p>
+  
+        </div>
+    </div>
+
+    <div class="record-card layout-img-left">
+      <div class="record-img-container">
+        <img src="img/preview18.png" class="record-img-full" alt="Corrección en clases">
+      </div>
+      <div class="record-content">
+        <span class="record-tag">Publicación web</span>
+        <h3>Usando Cloudflare</h3>
+        <p>
+          Durante el semestre los estudiantes aprendieron a publicar sus proyectos en Cloudflare pages, de forma manual y automática mediante GitHub.
+        </p>
+        <p>
+          En la foto se observa la Interfaz de Cloudflare Pages con el mensaje de despliegue exitoso.
+        </p>
+      </div>
+    </div>
+
+       <div class="record-card layout-text-left">
+      <div class="record-img-container">
+         <img src="img/preview23.png" class="record-img-full" alt="Interfaz en Figma">
+      </div>
+      <div class="record-content">
+        <span class="record-tag">JavaScript</span>
+        <h3>Caso: Ejercicios 2.1</h3>
+        <p>
+          En el ejercicio 2.1 los estudiantes lograron implementar funcionalidades
+          interactivas mediante JavaScript puro. Se enfocaron en la manipulación del 
+          DOM para crear experiencias dinámicas sin depender de frameworks externos.  
+        </p>
+        <p>
+          este proyecto logro una integración efectiva entre diseño y funcionalidad, con un procentaje del 15% de código JS limpio y optimizado.
+        </p>
+      </div>
+    </div>
+
+
+  <div class="record-card layout-img-left">
+      <div class="record-img-container">
+        <img src="img/fotoComp01.png" class="record-img-full" alt="Corrección en clases">
+      </div>
+      <div class="record-content">
+        <span class="record-tag">Del Desarrollo al Despliegue Final</span>
+        <h3>Aprendizaje en Acción: Integración y Deploy</h3>
+        <p>
+      Durante la asignatura trabajamos en modalidad híbrida, combinando clases presenciales y sesiones en línea. 
+      El taller culminó con una sesión de integración y despliegue, donde los equipos realizaron el merge de sus ramas de
+       desarrollo hacia la rama principal del repositorio, activando el pipeline automático de publicación en Cloudflare Pages. 
+       Más allá del código, se valoró la capacidad de argumentar las decisiones de
+       diseño y las soluciones implementadas durante las 17 semanas. Los resultados evidencian una madurez técnica sólida para un primer año. </p>
+      </div>
+    </div>
+
+
+  
+
+ 
+
+
+ 
+
+
+
+        <div class="record-card layout-vertical">
+      <div class="record-img-container">
+         <img src="img/preview21.png" class="record-img-full" alt="Foto Grupal o Evento">
+      </div>
+      <div class="record-content">
+        <span class="record-tag">Contribución</span>
+        <h3>Ejercicio fina de semestre</h3>
+        <p>
+         En el ejercicio final del semestre tuvimos un promedio de de contibución en termino de commit de 30 commits por estudiante, lo que refleja un alto nivel de compromiso y participación activa en el desarrollo del proyecto.
+         La grafica también muestra una distribución progresiva de las contribuciones entre octubre y noviembre, indicando un flujo constante de trabajo y colaboración.
+         </p>
+ <a href=" reporte-contribucion.pdf" target="_blank" class="modal-btn" style="text-decoration:none; display:inline-block;">
+            👉 Ver reporte completo de contribución
+          </a>
+        
+      </div>
+    </div>
+
+
+      <div class="record-card layout-vertical">
+      <div class="record-img-container">
+         <img src="img/foto-clases.png" class="record-img-full" alt="Foto Grupal o Evento">
+      </div>
+      <div class="record-content">
+      
+      </div>
+    </div>
+
   </div>
 
 
+  <div style="text-align:center; margin: 4rem 0 2rem;">
+    <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">📘 Metodología y Avance Semestral</h2>
+    <p style="color: var(--color-muted);">Cronología de aprendizaje basada en proyectos</p>
+  </div>
 
 
-      <div class="team-card">
-      <div class="exercise-header">Fase 2: MVP "Hola Mundo" (Semanas3-6)</div>
+  <div class="timeline-wrapper">
+
+    <div class="team-card">
+      <div class="exercise-header">Etapa 1: Wireframes & UI (Semanas 1-2)</div>
+      <small>📐 Objetivo: Comprender jerarquía visual y layout antes del código.</small>
+      <p>
+        Iniciamos la etapa trabajando el concepto de wireframes de baja y mediana fidelidad, entendiendo su propósito dentro del proceso de diseño y cómo nos permiten definir estructura, jerarquía y funcionalidad antes de avanzar al desarrollo visual.
+      </p>
+      <ul>
+        <li>Metodologías ágiles aplicadas al diseño</li>
+        <li>Uso de Trello con metodología Kanban</li>
+        <li>Historia de internet y la web</li>
+        <li>Diseño de wireframes de baja y mediana fidelidad en Figma</li>
+      </ul>
+      
+      <div class="gallery-container">
+        <div class="gallery-card">
+          <img class="gallery-img" src="img/preview15.png" alt="Bocetos a Lápiz"
+               data-description=""
+               data-link="https://figma.com/example1">
+          <div class="gallery-meta">
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img class="gallery-img" src="img/preview13.png" alt="UI Kit Básico"
+               data-description=""
+               data-link="https://figma.com/example2">
+          <div class="gallery-meta">
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img class="gallery-img" src="img/preview11.png" alt="Prototipo Navegable"
+               data-description=""
+               data-link="https://figma.com/example3">
+          <div class="gallery-meta">
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="exercise-header">Etapa 2: MVP "Hola Mundo" (Semanas 3-6)</div>
       <small>🌍 Objetivo: Primer despliegue real (HTML/CSS/JS).</small>
       <p>
         Más que un simple “Hola Mundo”, construimos un pequeño MVP. Trabajamos bajo una lógica ágil, 
         enseñando qué es un backlog y cómo usar Kanban en Trello. La primera versión fue local 
         y la segunda publicada mediante Cloudflare Pages.
-
-<ul>
-  <li>Etiquetas HTML básicas</li>
-  <li>Manejo de estilos básicos</li>
-  <li>Subida manual a Cloudflare Pages</li>
-  <li>Incorporación de código JavaScript básico</li>
-</ul>
-
       </p>
+      <ul>
+        <li>Etiquetas HTML básicas</li>
+        <li>Manejo de estilos básicos</li>
+        <li>Subida manual a Cloudflare Pages</li>
+        <li>Incorporación de código JavaScript básico</li>
+      </ul>
 
-         <div class="gallery-container">
+      <div class="gallery-container">
         <div class="gallery-card">
-          <img class="gallery-img" 
-              src="img/preview09.png" 
-               alt="Bocetos a Lápiz"
-               data-description="Primeros trazos explorando la jerarquía de la información."
+          <img class="gallery-img" src="img/preview09.png" alt="Mundo Anasol"
+               data-description="Proyecto desarrollado y publicado por Anasol González"
                data-link="https://mundoanasol.pages.dev/">
           <div class="gallery-meta">
-            <span class="gallery-desc">Proyecto desarrollado y publicado por Anasol González </span>
-            <a href="https://mundoanasol.pages.dev/" target="_blank">Ver Hola Mundo;</a>
+            <span class="gallery-desc">Proyecto por Anasol González</span>
+            <a href="https://mundoanasol.pages.dev/" target="_blank" class="gallery-link">Ver sitio →</a>
           </div>
         </div>
 
         <div class="gallery-card">
-          <img class="gallery-img" 
-               src="img/preview05.png" 
-               alt="UI Kit Básico"
-               data-description="Definición de sistema de diseño: tipografía y colores."
-               data-link="https://figma.com/example2">
+          <img class="gallery-img" src="img/preview05.png" alt="Pika Mundo"
+               data-description="Proyecto desarrollado y publicado por Piter Mart"
+               data-link="https://pikamundo.pages.dev/">
           <div class="gallery-meta">
-            <span class="gallery-desc">Proyecto desarrollado y publicado por Piter Mart .</span>
-            <a href="https://pikamundo.pages.dev/" target="_blank" >Ver Hola Mundo;</a>
+            <span class="gallery-desc">Proyecto por Piter Mart</span>
+            <a href="https://pikamundo.pages.dev/" target="_blank" class="gallery-link">Ver sitio →</a>
           </div>
         </div>
 
         <div class="gallery-card">
-          <img class="gallery-img" 
-               src="img/preview04.png" 
-               alt="Prototipo Navegable"
-               data-description="Interacciones básicas y flujo de navegación validado."
-               data-link="https://figma.com/example3">
+          <img class="gallery-img" src="img/preview04.png" alt="Hola Mundo Sus"
+               data-description="Proyecto desarrollado y publicado  por Susana Alvear"
+               data-link="https://holamundosus.pages.dev/">
           <div class="gallery-meta">
-            <span class="gallery-desc">Proyecto desarrollado y publicado por Susana Lucia Alvear Matus.</span>
-            <a href="https://holamundosus.pages.dev/" target="_blank" >Ver Hola Mundo;</a>
+            <span class="gallery-desc">Proyecto por Susana Alvear</span>
+            <a href="https://holamundosus.pages.dev/" target="_blank" class="gallery-link">Ver sitio →</a>
           </div>
         </div>
       </div>
-
     </div>
 
     <div class="team-card">
-        <div class="exercise-header">Fase 3: 🌓 Ejercicio 2.1 — Responsive + Dark Mode + Git (Semanas 7-10)</div>
-  <small>Layout, interactividad y GitHub conectado a Cloudflare</small>
+      <div class="exercise-header">Etapa 3: Responsive + Dark Mode + Git (Semanas 7-10)</div>
+      <small>🌓 Objetivo: Layout, interactividad y GitHub conectado a Cloudflare</small>
+      <p>
+        En esta Etapa los estudiantes integraron todos los conceptos previos y avanzaron 
+        hacia un nivel más profesional del desarrollo front-end: interfaces responsivas y modo oscuro.
+      </p>
+      <ul>
+        <li>Creación de layout responsive</li>
+        <li>Repositorio Git para cada estudiante</li>
+        <li>Conexión de la rama <code>main</code> a Cloudflare</li>
+        <li>Botón para cambiar el tema (light/dark)</li>
+      </ul>
 
-  <p>
-    En esta fase los estudiantes integraron todos los conceptos previos y avanzaron 
-    hacia un nivel más profesional del desarrollo front-end. El objetivo fue 
-    construir una interfaz completamente responsive, incorporar un modo oscuro funcional 
-    y aprender a trabajar con repositorios reales conectados a un flujo básico de CI/CD.
-  </p>
-
-  <ul>
-    <li>Creación de layout responsive</li>
-    <li>Repositorio Git para cada estudiante</li>
-    <li>Conexión de la rama <code>main</code> a Cloudflare</li>
-    <li>Botón para cambiar el tema (light/dark)</li>
-    <li>Incorporación de Google Fonts</li>
-  </ul>
-
-  <p>
-    Por primera vez gestionaron su propio repositorio real y comprendieron cómo 
-    funciona un flujo básico de despliegue automatizado.
-  </p>
-
-       <div class="gallery-container">
+      <div class="gallery-container">
         <div class="gallery-card">
-          <img class="gallery-img" 
-               src="img/preview02.png" 
-               alt="Bocetos a Lápiz"
-               data-description="primeros pasos en diseño web responsivo y dark mode."
+          <img class="gallery-img" src="img/preview02.png" alt="Proyecto Mushiii"
+               data-description="Belén Arias Soto"
                data-link="https://mushiii.pages.dev/">
           <div class="gallery-meta">
-            <span class="gallery-desc">EBelen Arias Soto </span>
-            <a href="https://mushiii.pages.dev/" target="_blank" class="gallery-link">Ver proyecto</a>
-             <a href="https://github.com/ndk23010435-code/Mushiii" target="_blank" class="gallery-link">Ver proyecto</a>
+            <span class="gallery-desc">Belén Arias Soto</span>
+            <a href="https://mushiii.pages.dev/" target="_blank" class="gallery-link">Ver proyecto →</a>
+             <a href="https://github.com/ndk23010435-code/Mushiii" target="_blank" class="gallery-link">Repositorio →</a>
           </div>
         </div>
 
 
+     
 
 
         <div class="gallery-card">
-          <img class="gallery-img" 
-               src="img/preview08.png" 
-               alt="UI Kit Básico"
-               data-description="Definición de sistema de diseño: tipografía y colores."
-               data-link="https://figma.com/example2">
+          <img class="gallery-img" src="img/preview08.png" alt="UI Kit"
+               data-description="Valentina Farias"
+               data-link="https://github.com/insomnioansioso/Ejercicio2.1 ">
           <div class="gallery-meta">
-            <span class="gallery-desc">Componentes y sistema visual base.</span>
-            <a href="https://figma.com/example2" target="_blank" class="gallery-link">Ver archivo Figma &rarr;</a>
+            <span class="gallery-desc">Valentina Farias </span>
+         
+                <a href="https://a3c80681.ejercicio2-1.pages.dev/" target="_blank" class="gallery-link">Ver proyecto →</a>
+                   <a href="https://github.com/insomnioansioso/Ejercicio2.1 " class="gallery-link"> Repositorio → </a>
           </div>
         </div>
 
+
+
+
+
+
         <div class="gallery-card">
-          <img class="gallery-img" 
-               src="img/preview06.png" 
-               alt="Prototipo Navegable"
-               data-description="Interacciones básicas y flujo de navegación validado."
+          <img class="gallery-img" src="img/preview06.png" alt="Proyecto Web UNAB"
+               data-description="Valentina Torres"
                data-link="https://webunab-5gy.pages.dev/">
           <div class="gallery-meta">
-            <span class="gallery-desc">Proyecto de Valentina Torres</span>
-            <a href="https://webunab-5gy.pages.dev/" target="_blank" class="gallery-link">Ver proyecto &rarr;</a>
-              <a href="https://github.com/Tina0o0/webUnab" target="_blank" class="gallery-link">Github &rarr;</a>
+            <span class="gallery-desc">Valentina Torres</span>
+            <a href="https://webunab-5gy.pages.dev/" target="_blank" class="gallery-link">Ver proyecto →</a>
+             <a href="https://github.com/Tina0o0/webUnab" target="_blank" class="gallery-link">Repositorio →</a>
           </div>
         </div>
       </div>
-
     </div>
 
 
- <div class="team-card">
-  <div class="exercise-header">Fase 4: 🚀 Desarrollo enfoque interactivo (JavaScript) (Semanas 11-14)</div>
-  <small>Diseño de producto, estructura profesional</small>
 
-  <p>
-    En esta fase los estudiantes abordaron un proyecto desde la estructura del código. 
-    Comenzaron trabajando con una arquitectura CSS más limpia y luego avanzaron hacia 
-    un desarrollo interactivo más complejo mediante JavaScript. Manipularon el DOM a través 
-    de selectores, eventos y gestión de clases para crear comportamientos dinámicos.
-  </p>
 
-  <ul>
-    <li>Creación de un proyecto con estructura CSS organizada y escalable</li>
-    <li>Implementación de funcionalidades mediante manipulación del DOM</li>
-    <li>Uso de selectores, eventos y clases para modificar comportamientos</li>
-  </ul>
 
-  <p>
-    Esta fase consolidó las bases de un desarrollo front-end más profesional, permitiendo 
-    a los estudiantes comprender cómo se construye la interacción real en una interfaz.
-  </p>
 
-  <div class="gallery-container">
+    <div class="team-card">
+      <div class="exercise-header">Etapa 4: Desarrollo Interactivo (Semanas 11-14)</div>
+      <small>🚀 Objetivo: Diseño de producto y estructura JS profesional</small>
+      <p>
+        Manipularon el DOM a través de selectores, eventos y gestión de clases para crear comportamientos dinámicos.
+      </p>
+      <ul>
+        <li>Estructura CSS organizada y escalable</li>
+        <li>Funcionalidades mediante manipulación del DOM</li>
+        <li>Uso de selectores, eventos y clases</li>
+      </ul>
 
-    <!-- Proyecto 1 -->
-    <div class="gallery-card">
-      <img class="gallery-img" 
-           src="img/preview01.png" 
-           alt="Proyecto Final 1"
-           data-description="Proyecto final con estructura CSS optimizada y manejo avanzado del DOM."
-           data-link="/ejemplos/E3.V2/index.html">
-      <div class="gallery-meta">
-        <span class="gallery-desc">Valentina Torres</span>
-        <a href="/ejemplos/E3.V2/index.html" target="_blank" class="gallery-link">Ver proyecto</a>
-  
+      <div class="gallery-container">
+        <div class="gallery-card">
+          <img class="gallery-img" src="img/preview01.png" alt="Proyecto Final 1"
+               data-description="Valentina Torres"
+               data-link="/ejemplos/E3.V2/index.html">
+          <div class="gallery-meta">
+            <span class="gallery-desc">Valentina Torres</span>
+            <a href="/ejemplos/E3.V2/index.html" class="gallery-link">Ver avance →</a>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img class="gallery-img" src="img/preview10.png" alt="Proyecto Final 2"
+               data-description="Susana Alvear"
+               data-link="/ejemplos/E3.V1/index.html/">
+          <div class="gallery-meta">
+            <span class="gallery-desc">Susana Alvear</span>
+            <a href="ejemplos/E3.V1/index.html" class="gallery-link">Ver avance →</a>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img class="gallery-img" src="img/preview03.png" alt="Proyecto Final 3"
+               data-description="Piter Mart"
+               data-link="/ejemplos/E3.V3/index.html/">
+          <div class="gallery-meta">
+            <span class="gallery-desc">Piter Mart</span>
+            <a href="ejemplos/E3.V3/index.html" class="gallery-link">Ver avance →</a>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Proyecto 2 -->
-    <div class="gallery-card">
-      <img class="gallery-img" 
-           src="img/preview10.png" 
-           alt="Proyecto Final 2"
-           data-description="Implementación de temas, layout responsivo y despliegue automatizado."
-           data-link="/ejemplos/E3.V1/index.html/">
-      <div class="gallery-meta">
-        <span class="gallery-desc">Susana Alvear</span>
-        <a href="/ejemplos/E3.V1/index.html" target="_blank" class="gallery-link">Ver proyecto</a>
-       
+    <div class="team-card" style="border-color: var(--color-primary);">
+      <div class="exercise-header">Etapa 5: Proyecto Final Colaborativo (Semanas 15-17)</div>
+      <small style="background-color: var(--color-primary); color: white;">🏁 Objetivo: Arquitectura completa y CI/CD</small>
+      <p>
+        Esta Etapa reunió todos los aprendizajes. Los estudiantes desarrollaron un proyecto end-to-end, 
+        entendiendo cómo se estructura y mantiene un sitio web profesional.
+      </p>
+      <p>
+        Cada grupo trabajó colaborativamente en GitHub, integrando su trabajo a la rama <strong>dev</strong> 
+        y finalmente a <strong>main</strong>, conectada a Cloudflare Pages.
+      </p>
+      <ul>
+        <li>Arquitectura web end-to-end</li>
+        <li>Trabajo colaborativo en Git/GitHub</li>
+        <li>CI/CD con Cloudflare Pages</li>
+      </ul>
+
+      <div class="gallery-container">
+          <a href="https://unabweb.pages.dev/" target="_blank" class="modal-btn" style="text-decoration:none; display:inline-block;">
+            👉 Ver Proyecto Integrado
+          </a>
       </div>
     </div>
 
-    <!-- Proyecto 3 -->
-    <div class="gallery-card">
-      <img class="gallery-img" 
-           src="img/preview03.png" 
-           alt="Proyecto Final 3"
-           data-description="Manejo del DOM, eventos y estilos dinámicos con despliegue en Cloudflare."
-           data-link="/ejemplos/E3.V3/index.html/">
-      <div class="gallery-meta">
-        <span class="gallery-desc">Piter Mart </span>
-        <a href="/ejemplos/E3.V3/index.html" target="_blank" class="gallery-link">Ver proyecto</a>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
- 
-<div class="team-card">
-  <div class="exercise-header">Fase 5: 🏁 Proyecto Final Colaborativo (Semanas 15-17)</div>
-  <small>Arquitectura completa, trabajo en equipo y despliegue continuo</small>
-
-  <p>
-    Esta fase correspondió al proyecto final del curso y reunió todos los aprendizajes 
-    técnicos y de colaboración vistos durante el semestre. Los estudiantes desarrollaron 
-    un proyecto end-to-end, entendiendo cómo se estructura y mantiene un sitio web 
-    profesional desde la organización de archivos, la arquitectura visual y funcional, 
-    hasta la integración continua en un entorno real de despliegue.
-  </p>
-
-  <p>
-    Cada grupo trabajó de manera colaborativa dentro de un repositorio común, utilizando 
-    ramas independientes para avanzar en su sección del proyecto y luego integrando su 
-    trabajo a la rama <strong>dev</strong> y finalmente a <strong>main</strong>, conectada 
-    directamente a Cloudflare Pages para el despliegue automático. Esta dinámica permitió 
-    comprender cómo funciona un flujo de trabajo real basado en control de versiones, 
-    resolución de conflictos y responsabilidad compartida.
-  </p>
-
-  <ul>
-    <li>Comprensión completa de la arquitectura de un proyecto web end-to-end</li>
-    <li>Trabajo colaborativo utilizando Git y GitHub con ramas por grupo</li>
-    <li>Integración del proyecto a un flujo de CI/CD conectado a Cloudflare Pages</li>
-    <li>Desarrollo del home general del sitio y perfiles individuales por integrante</li>
-    <li>Aplicación conjunta de HTML, CSS y JavaScript en un contexto real de producción</li>
-  </ul>
-
-  <p>
-    Este proyecto definió la nota del <strong>Proyecto Final (Nota 4)</strong> y también 
-    alimentó parte de los criterios del <strong>Examen</strong>, permitiendo evaluar no solo 
-    la calidad técnica del resultado, sino la participación, el compromiso y el trabajo 
-    colaborativo del equipo.
-  </p>
-
-  <div class="gallery-container">
-    <div class="gallery-card" style="text-align:center;">
-      <a href="https://unabweb.pages.dev/" target="_blank" class="gallery-link" style="font-size:1rem;">
-        👉 Ver Proyecto Final
-      </a>
-    </div>
-  </div>
-</div>
-
-
-
-</div>
+  </div> </div>
 
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
   <img class="modal-content" id="img01">
-  
   <div class="modal-caption-container">
     <div id="modal-desc" class="modal-text"></div>
     <a id="modal-link" href="#" target="_blank" class="modal-btn">Visitar Proyecto</a>
@@ -516,42 +839,37 @@ Iniciamos la fase trabajando el concepto de wireframes de baja y mediana fidelid
 </div>
 
 <script>
-  // Obtener el modal
+  // Script Modal
   var modal = document.getElementById("myModal");
-
-  // Obtener la imagen y insertarla dentro del modal
   var modalImg = document.getElementById("img01");
-  var captionText = document.getElementById("caption");
+  var captionText = document.getElementById("modal-desc");
+  var linkBtn = document.getElementById("modal-link");
   
-  // Seleccionar todas las imágenes con la clase .gallery-img
   var images = document.querySelectorAll(".gallery-img");
 
   images.forEach(function(img) {
     img.onclick = function(){
       modal.style.display = "block";
       modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
+      captionText.innerHTML = this.dataset.description || this.alt;
+      
+      var link = this.dataset.link;
+      if(link && link !== "#") {
+        linkBtn.href = link;
+        linkBtn.style.display = "inline-block";
+      } else {
+        linkBtn.style.display = "none";
+      }
     }
   });
 
-  // Obtener el elemento <span> que cierra el modal
   var span = document.getElementsByClassName("close")[0];
 
-  // Cuando el usuario hace clic en <span> (x), cerrar el modal
-  span.onclick = function() { 
-    modal.style.display = "none";
-  }
-
-  // Cerrar también si se hace clic fuera de la imagen
+  span.onclick = function() { modal.style.display = "none"; }
   modal.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
+    if (event.target == modal) { modal.style.display = "none"; }
   }
 </script>
 
 </body>
 </html>
-
-
-
