@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Syllabus & Portafolio — 1er Año Diseño UNAB</title>
+<title>Web — 1er Año UNAB</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -83,7 +83,7 @@
     -webkit-text-fill-color: transparent;
   }
   .hero p {
-    font-size: 1.25rem; color: var(--color-muted); max-width: 700px; margin: 0 auto;
+    font-size: 1.25rem; color: var(--color-muted); max-width: 950px; margin: 0 auto;
     position: relative; z-index: 1;
   }
 
@@ -273,9 +273,9 @@
   /* --- SECCIÓN BITÁCORA (REGISTROS DE CLASE) --- */
   
   .records-section {
-    margin-top: 5rem;
-    padding-top: 3rem;
-    border-top: 1px solid var(--color-border);
+   /*  margin-top: 5rem;*/
+    padding-top: 2rem;
+   /* border-top: 1px solid var(--color-border);*/
   }
 
   /* Estilo base de la tarjeta de registro */
@@ -418,26 +418,46 @@
       order: 1;
     }
   }
-
+.code-block {
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: monospace;
+    overflow-x: auto;
+    border: 1px solid var(--color-border);
+}
 </style>
 </head>
 <body>
 
 <nav>
-  <div class="brand">Proyectos Web — 1er Año UNAB</div>
+  <div class="brand"> Web — 1er Año UNAB</div>
   <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="destacado.html">Destacados</a></li>
+    <li><a href="index.html">Proyecto</a></li>
+    <li><a href="bitacora.html">Bitácora</a></li>
   </ul>
 </nav>
 
+
 <section class="hero">
-  <h1>Syllabus & Portafolio del Curso</h1>
-  <p>Una visión integral: desde la planificación académica hasta la ejecución técnica en metodologías ágiles.</p>
+  <h1>Bitácora de la Asignatura Web</h1>
+  <p style="margin-bottom: 60px;">
+    Registro del desarrollo progresivo de la asignatura:  hitos, avances técnicos y documentación del curso. 
+   Desde los primeros wireframes y MVPs de “Hola Mundo”, hasta el despliegue final en Cloudflare Pages. 
+   Esta bitácora muestra cómo diseño, código y metodología ágil se integran 
+    para construir proyectos reales desde el primer día. <br>
+
+      Docente: <strong>Paulo Andrea Correa</strong> | <a href="https://paulo-artwork.pages.dev/" target="_blank">[Bio]</a>
+  </p>
+
+  <a href="sillabusWeb.pdf" target="_blank" class="modal-btn" style="text-decoration:none; display:inline-block;">
+            Descargar Syllabus del Taller
+          </a>
+
 </section>
 
 <div class="container">
-
+<!--
   <div class="section-title">1. Identificación del Curso</div>
   
   <div class="syllabus-grid">
@@ -468,31 +488,23 @@
     </div>
   </div>
 
-
+-->
 
 
 
 <div class="records-section">
-    <div style="text-align:center; margin-bottom: 3rem;">
-      <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">📸 Bitácora del Taller</h2>
-      <p style="color: var(--color-muted);">Registros, observaciones y momentos clave del proceso.</p>
-    </div>
-
+  
 
        <div class="record-card layout-vertical">
       <div class="record-media-wrapper">
         <div class="record-img-container">
-          <img src="img/preview07.png" class="record-img-full" alt="Foto Grupal o Evento">
+          <img src="img/preview07.png" class="record-img-full" alt="interfaz Hola Mundo">
         </div>
         <div class="record-caption">
          Ejemplo de proyecto desarrollado por Javiera Nuñez <a href="https://holamundo-a1q.pages.dev/" target="_blank">ver proyecto ↗</a>
         
         </div>
       </div>
-
-
-
-
 
       <div class="record-content">
         <span class="record-tag">Hola Mundo</span>
@@ -508,7 +520,7 @@
 
     <div class="record-card layout-img-left">
       <div class="record-img-container">
-        <img src="img/preview18.png" class="record-img-full" alt="Corrección en clases">
+        <img src="img/preview18.png" class="record-img-full" alt="interfaz Cloudflare Pages">
       </div>
       <div class="record-content">
         <span class="record-tag">Publicación web</span>
@@ -524,7 +536,7 @@
 
        <div class="record-card layout-text-left">
       <div class="record-img-container">
-         <img src="img/preview23.png" class="record-img-full" alt="Interfaz en Figma">
+         <img src="img/preview12.png" class="record-img-full" alt="Interfaz de github">
       </div>
       <div class="record-content">
         <span class="record-tag">JavaScript</span>
@@ -569,11 +581,11 @@
 
         <div class="record-card layout-vertical">
       <div class="record-img-container">
-         <img src="img/preview21.png" class="record-img-full" alt="Foto Grupal o Evento">
+         <img src="img/preview21.png" class="record-img-full" alt="">
       </div>
       <div class="record-content">
         <span class="record-tag">Contribución</span>
-        <h3>Ejercicio fina de semestre</h3>
+        <h3>Ejercicio final de semestre</h3>
         <p>
          En el ejercicio final del semestre tuvimos un promedio de de contibución en termino de commit de 30 commits por estudiante, lo que refleja un alto nivel de compromiso y participación activa en el desarrollo del proyecto.
          La grafica también muestra una distribución progresiva de las contribuciones entre octubre y noviembre, indicando un flujo constante de trabajo y colaboración.
@@ -607,7 +619,7 @@
   <div class="timeline-wrapper">
 
     <div class="team-card">
-      <div class="exercise-header">Etapa 1: Wireframes & UI (Semanas 1-2)</div>
+      <div class="exercise-header">Semanas 1-2: Wireframes & UI </div>
       <small>📐 Objetivo: Comprender jerarquía visual y layout antes del código.</small>
       <p>
         Iniciamos la etapa trabajando el concepto de wireframes de baja y mediana fidelidad, entendiendo su propósito dentro del proceso de diseño y cómo nos permiten definir estructura, jerarquía y funcionalidad antes de avanzar al desarrollo visual.
@@ -643,10 +655,11 @@
           </div>
         </div>
       </div>
+
     </div>
 
     <div class="team-card">
-      <div class="exercise-header">Etapa 2: MVP "Hola Mundo" (Semanas 3-6)</div>
+      <div class="exercise-header">Semanas 3-6: MVP "Hola Mundo" </div>
       <small>🌍 Objetivo: Primer despliegue real (HTML/CSS/JS).</small>
       <p>
         Más que un simple “Hola Mundo”, construimos un pequeño MVP. Trabajamos bajo una lógica ágil, 
@@ -691,10 +704,13 @@
           </div>
         </div>
       </div>
+
+
+
     </div>
 
     <div class="team-card">
-      <div class="exercise-header">Etapa 3: Responsive + Dark Mode + Git (Semanas 7-10)</div>
+      <div class="exercise-header">Semanas 7-10: Responsive + Dark Mode + Git </div>
       <small>🌓 Objetivo: Layout, interactividad y GitHub conectado a Cloudflare</small>
       <p>
         En esta Etapa los estudiantes integraron todos los conceptos previos y avanzaron 
@@ -759,7 +775,7 @@
 
 
     <div class="team-card">
-      <div class="exercise-header">Etapa 4: Desarrollo Interactivo (Semanas 11-14)</div>
+      <div class="exercise-header">Semanas 11-14: Desarrollo Interactivo </div>
       <small>🚀 Objetivo: Diseño de producto y estructura JS profesional</small>
       <p>
         Manipularon el DOM a través de selectores, eventos y gestión de clases para crear comportamientos dinámicos.
@@ -804,7 +820,7 @@
     </div>
 
     <div class="team-card" style="border-color: var(--color-primary);">
-      <div class="exercise-header">Etapa 5: Proyecto Final Colaborativo (Semanas 15-17)</div>
+      <div class="exercise-header">Semanas 15-17: Proyecto Final Colaborativo </div>
       <small style="background-color: var(--color-primary); color: white;">🏁 Objetivo: Arquitectura completa y CI/CD</small>
       <p>
         Esta Etapa reunió todos los aprendizajes. Los estudiantes desarrollaron un proyecto end-to-end, 
